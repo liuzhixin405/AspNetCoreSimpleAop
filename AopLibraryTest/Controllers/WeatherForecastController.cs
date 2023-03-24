@@ -1,0 +1,40 @@
+using AopLibrary;
+using Microsoft.AspNetCore.Mvc;
+using System.Reflection;
+using System.Xml.Linq;
+
+namespace AopLibraryTest.Controllers
+{
+    [ApiController]
+    [Route("[controller]")]
+    public class WeatherForecastController : ControllerBase
+    {
+        private readonly ILogger<WeatherForecastController> _logger;
+        private readonly IRootServiceFactory<IWeatherForecastService> _cusServiceFactory;
+
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IRootServiceFactory<IWeatherForecastService> cusServiceFactory)
+        {
+            _logger = logger;
+            _cusServiceFactory = cusServiceFactory;
+        }
+
+        [HttpGet(Name = "GetWeatherForecast")]
+        public async Task<IEnumerable<WeatherForecast>> Get()
+        {
+            return await _cusServiceFactory.Invoke<IEnumerable<WeatherForecast>>("get",null);
+        }
+
+        [HttpGet("greeting")]
+        public async Task<string> GreetingAsync(string name)
+        {
+            var result =await _cusServiceFactory.Invoke<string>("GreetingAsync", new object[] { name });
+            return result;
+        }
+
+        [HttpGet("empty")]
+        public Task GetEmpty()
+        {
+            return _cusServiceFactory.Invoke("GetEmpty", null);
+        }
+    }
+}

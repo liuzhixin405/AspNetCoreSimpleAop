@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = AopLibrary
+build_property.ProjectDir = D:\GitHub\exercisebook\AOP\AspNetCoreSimpleAop\AopLibrary\
