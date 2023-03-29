@@ -18,3 +18,13 @@ D:\GitHub\exercisebook\AOP\AspNetCoreSimpleAop\AopLibrary\obj\Debug\netstandard2
 D:\GitHub\exercisebook\AOP\AspNetCoreSimpleAop\AopLibrary\obj\Debug\netstandard2.1\AopLibrary.csproj.CoreCompileInputs.cache
 D:\GitHub\exercisebook\AOP\AspNetCoreSimpleAop\AopLibrary\obj\Debug\netstandard2.1\AopLibrary.dll
 D:\GitHub\exercisebook\AOP\AspNetCoreSimpleAop\AopLibrary\obj\Debug\netstandard2.1\AopLibrary.pdb
+G:\Users\GitHub\AspNetCoreSimpleAop\AopLibrary\bin\Debug\netstandard2.1\AopLibrary.deps.json
+G:\Users\GitHub\AspNetCoreSimpleAop\AopLibrary\bin\Debug\netstandard2.1\AopLibrary.dll
+G:\Users\GitHub\AspNetCoreSimpleAop\AopLibrary\bin\Debug\netstandard2.1\AopLibrary.pdb
+G:\Users\GitHub\AspNetCoreSimpleAop\AopLibrary\obj\Debug\netstandard2.1\AopLibrary.csproj.AssemblyReference.cache
+G:\Users\GitHub\AspNetCoreSimpleAop\AopLibrary\obj\Debug\netstandard2.1\AopLibrary.GeneratedMSBuildEditorConfig.editorconfig
+G:\Users\GitHub\AspNetCoreSimpleAop\AopLibrary\obj\Debug\netstandard2.1\AopLibrary.AssemblyInfoInputs.cache
+G:\Users\GitHub\AspNetCoreSimpleAop\AopLibrary\obj\Debug\netstandard2.1\AopLibrary.AssemblyInfo.cs
+G:\Users\GitHub\AspNetCoreSimpleAop\AopLibrary\obj\Debug\netstandard2.1\AopLibrary.csproj.CoreCompileInputs.cache
+G:\Users\GitHub\AspNetCoreSimpleAop\AopLibrary\obj\Debug\netstandard2.1\AopLibrary.dll
+G:\Users\GitHub\AspNetCoreSimpleAop\AopLibrary\obj\Debug\netstandard2.1\AopLibrary.pdb
