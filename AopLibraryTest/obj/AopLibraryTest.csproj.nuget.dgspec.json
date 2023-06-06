@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHub\\exercisebook\\AOP\\AspNetCoreSimpleAop\\AopLibraryTest\\AopLibraryTest.csproj": {}
+    "D:\\GitHub\\AspNetCoreSimpleAop\\AopLibraryTest\\AopLibraryTest.csproj": {}
   },
   "projects": {
-    "D:\\GitHub\\exercisebook\\AOP\\AspNetCoreSimpleAop\\AopLibraryTest\\AopLibraryTest.csproj": {
+    "D:\\GitHub\\AspNetCoreSimpleAop\\AopLibraryTest\\AopLibraryTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\exercisebook\\AOP\\AspNetCoreSimpleAop\\AopLibraryTest\\AopLibraryTest.csproj",
+        "projectUniqueName": "D:\\GitHub\\AspNetCoreSimpleAop\\AopLibraryTest\\AopLibraryTest.csproj",
         "projectName": "AopLibraryTest",
-        "projectPath": "D:\\GitHub\\exercisebook\\AOP\\AspNetCoreSimpleAop\\AopLibraryTest\\AopLibraryTest.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\exercisebook\\AOP\\AspNetCoreSimpleAop\\AopLibraryTest\\obj\\",
+        "projectPath": "D:\\GitHub\\AspNetCoreSimpleAop\\AopLibraryTest\\AopLibraryTest.csproj",
+        "packagesPath": "D:\\Program Files\\.nuget\\packages",
+        "outputPath": "D:\\GitHub\\AspNetCoreSimpleAop\\AopLibraryTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,14 +22,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\GitHub\\exercisebook\\AOP\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj": {
-                "projectPath": "D:\\GitHub\\exercisebook\\AOP\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj"
+              "D:\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj": {
+                "projectPath": "D:\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj"
+              },
+              "D:\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj": {
+                "projectPath": "D:\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj"
               }
             }
           }
@@ -72,18 +76,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\GitHub\\exercisebook\\AOP\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj": {
+    "D:\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\exercisebook\\AOP\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj",
+        "projectUniqueName": "D:\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj",
         "projectName": "AopLibrary",
-        "projectPath": "D:\\GitHub\\exercisebook\\AOP\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\exercisebook\\AOP\\AspNetCoreSimpleAop\\AopLibrary\\obj\\",
+        "projectPath": "D:\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj",
+        "packagesPath": "D:\\Program Files\\.nuget\\packages",
+        "outputPath": "D:\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -133,7 +137,65 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj",
+        "projectName": "StartupDiagnostics",
+        "projectPath": "D:\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj",
+        "packagesPath": "D:\\Program Files\\.nuget\\packages",
+        "outputPath": "D:\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

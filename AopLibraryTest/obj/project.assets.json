@@ -136,6 +136,19 @@
         "runtime": {
           "bin/placeholder/AopLibrary.dll": {}
         }
+      },
+      "StartupDiagnostics/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/StartupDiagnostics.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StartupDiagnostics.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -514,26 +527,32 @@
       "type": "project",
       "path": "../AopLibrary/AopLibrary.csproj",
       "msbuildProject": "../AopLibrary/AopLibrary.csproj"
+    },
+    "StartupDiagnostics/1.0.0": {
+      "type": "project",
+      "path": "../StartupDiagnostics/StartupDiagnostics.csproj",
+      "msbuildProject": "../StartupDiagnostics/StartupDiagnostics.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "AopLibrary >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.1",
+      "StartupDiagnostics >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
+    "D:\\Program Files\\.nuget\\packages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\exercisebook\\AOP\\AspNetCoreSimpleAop\\AopLibraryTest\\AopLibraryTest.csproj",
+      "projectUniqueName": "D:\\GitHub\\AspNetCoreSimpleAop\\AopLibraryTest\\AopLibraryTest.csproj",
       "projectName": "AopLibraryTest",
-      "projectPath": "D:\\GitHub\\exercisebook\\AOP\\AspNetCoreSimpleAop\\AopLibraryTest\\AopLibraryTest.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub\\exercisebook\\AOP\\AspNetCoreSimpleAop\\AopLibraryTest\\obj\\",
+      "projectPath": "D:\\GitHub\\AspNetCoreSimpleAop\\AopLibraryTest\\AopLibraryTest.csproj",
+      "packagesPath": "D:\\Program Files\\.nuget\\packages",
+      "outputPath": "D:\\GitHub\\AspNetCoreSimpleAop\\AopLibraryTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -544,14 +563,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\GitHub\\exercisebook\\AOP\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj": {
-              "projectPath": "D:\\GitHub\\exercisebook\\AOP\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj"
+            "D:\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj": {
+              "projectPath": "D:\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj"
+            },
+            "D:\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj": {
+              "projectPath": "D:\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj"
             }
           }
         }
@@ -594,7 +617,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

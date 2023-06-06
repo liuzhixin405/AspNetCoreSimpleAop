@@ -5,7 +5,9 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AopLibraryTest", "AopLibraryTest\AopLibraryTest.csproj", "{7E29FB9A-FE6F-46BA-9F6F-3C726EE20734}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AopLibrary", "AopLibrary\AopLibrary.csproj", "{63B567A5-B36F-43A8-B65F-31D8CF60678C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AopLibrary", "AopLibrary\AopLibrary.csproj", "{63B567A5-B36F-43A8-B65F-31D8CF60678C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StartupDiagnostics", "StartupDiagnostics\StartupDiagnostics.csproj", "{4089CAF2-D409-41A8-80E9-A86FC4FB9F16}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{63B567A5-B36F-43A8-B65F-31D8CF60678C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63B567A5-B36F-43A8-B65F-31D8CF60678C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63B567A5-B36F-43A8-B65F-31D8CF60678C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4089CAF2-D409-41A8-80E9-A86FC4FB9F16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4089CAF2-D409-41A8-80E9-A86FC4FB9F16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4089CAF2-D409-41A8-80E9-A86FC4FB9F16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4089CAF2-D409-41A8-80E9-A86FC4FB9F16}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

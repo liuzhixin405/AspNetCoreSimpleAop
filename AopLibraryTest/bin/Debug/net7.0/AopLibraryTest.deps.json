@@ -10,6 +10,7 @@
         "dependencies": {
           "AopLibrary": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "7.0.1",
+          "StartupDiagnostics": "1.0.0",
           "Swashbuckle.AspNetCore": "6.4.0"
         },
         "runtime": {
@@ -82,6 +83,11 @@
         "runtime": {
           "AopLibrary.dll": {}
         }
+      },
+      "StartupDiagnostics/1.0.0": {
+        "runtime": {
+          "StartupDiagnostics.dll": {}
+        }
       }
     }
   },
@@ -148,6 +154,11 @@
       "hashPath": "swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
     },
     "AopLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StartupDiagnostics/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

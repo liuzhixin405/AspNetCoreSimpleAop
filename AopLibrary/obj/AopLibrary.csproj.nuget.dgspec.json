@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHub\\exercisebook\\AOP\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj": {}
+    "D:\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj": {}
   },
   "projects": {
-    "D:\\GitHub\\exercisebook\\AOP\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj": {
+    "D:\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\exercisebook\\AOP\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj",
+        "projectUniqueName": "D:\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj",
         "projectName": "AopLibrary",
-        "projectPath": "D:\\GitHub\\exercisebook\\AOP\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\exercisebook\\AOP\\AspNetCoreSimpleAop\\AopLibrary\\obj\\",
+        "projectPath": "D:\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj",
+        "packagesPath": "D:\\Program Files\\.nuget\\packages",
+        "outputPath": "D:\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

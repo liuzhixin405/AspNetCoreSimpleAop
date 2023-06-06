@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = StartupDiagnostics
+build_property.ProjectDir = G:\历史下载\AspNetCore.Docs-main\AspNetCore.Docs-main\aspnetcore\fundamentals\host\platform-specific-configuration\samples\3.x\StartupDiagnostics\
