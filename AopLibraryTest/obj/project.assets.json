@@ -548,11 +548,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\GitHub\\AspNetCoreSimpleAop\\AopLibraryTest\\AopLibraryTest.csproj",
+      "projectUniqueName": "D:\\GitHub\\AspNetCoreSimpleAop\\AopLibraryTest\\AopLibraryTest.csproj",
       "projectName": "AopLibraryTest",
-      "projectPath": "d:\\GitHub\\AspNetCoreSimpleAop\\AopLibraryTest\\AopLibraryTest.csproj",
+      "projectPath": "D:\\GitHub\\AspNetCoreSimpleAop\\AopLibraryTest\\AopLibraryTest.csproj",
       "packagesPath": "D:\\Program Files\\.nuget\\packages",
-      "outputPath": "d:\\GitHub\\AspNetCoreSimpleAop\\AopLibraryTest\\obj\\",
+      "outputPath": "D:\\GitHub\\AspNetCoreSimpleAop\\AopLibraryTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -570,11 +570,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "d:\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj": {
-              "projectPath": "d:\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj"
+            "D:\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj": {
+              "projectPath": "D:\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj"
             },
-            "d:\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj": {
-              "projectPath": "d:\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj"
+            "D:\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj": {
+              "projectPath": "D:\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj"
             }
           }
         }

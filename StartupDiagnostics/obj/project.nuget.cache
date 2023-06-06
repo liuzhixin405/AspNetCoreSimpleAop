@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z7fQumXLTBrq+JnLdPM274Y5E7BX0HUn4iXp3y5nezvEojyZKuXUe3J5ABJLkAXIsjB08wkm9d9SGKT7yzJRbw==",
+  "dgSpecHash": "aFzy5r1RlSsB1rivDuv7LWv18NMuFQTPbreaPBNFPG3N7ui3rl49YQ3J3fAVc4QTY/phu9s4JLokgFJ25mzoYQ==",
   "success": true,
-  "projectFilePath": "d:\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj",
+  "projectFilePath": "D:\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
