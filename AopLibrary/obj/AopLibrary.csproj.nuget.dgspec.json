@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "D:\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj": {}
   },
   "projects": {
@@ -12,16 +13,28 @@
         "projectPath": "D:\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj",
         "packagesPath": "D:\\Program Files\\.nuget\\packages",
         "outputPath": "D:\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\obj\\",
+=======
+    "G:\\Users\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj": {}
+  },
+  "projects": {
+    "G:\\Users\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\Users\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj",
+        "projectName": "AopLibrary",
+        "projectPath": "G:\\Users\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj",
+        "packagesPath": "C:\\Users\\86130\\.nuget\\packages\\",
+        "outputPath": "G:\\Users\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\obj\\",
+>>>>>>> 33e579f16888150517efb75ee6f0d2f71f685b7f
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\86130\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -61,7 +74,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+>>>>>>> 33e579f16888150517efb75ee6f0d2f71f685b7f
         }
       }
     }

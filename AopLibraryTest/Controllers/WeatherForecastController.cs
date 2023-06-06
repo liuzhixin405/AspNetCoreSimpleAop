@@ -11,7 +11,7 @@ namespace AopLibraryTest.Controllers
     {
         private readonly ILogger<WeatherForecastController> _logger;
         private readonly IRootServiceFactory<IWeatherForecastService> _cusServiceFactory;
-
+       
         public WeatherForecastController(ILogger<WeatherForecastController> logger, IRootServiceFactory<IWeatherForecastService> cusServiceFactory)
         {
             _logger = logger;
@@ -21,20 +21,20 @@ namespace AopLibraryTest.Controllers
         [HttpGet(Name = "GetWeatherForecast")]
         public async Task<IEnumerable<WeatherForecast>> Get()
         {
-            return await _cusServiceFactory.Invoke<IEnumerable<WeatherForecast>>("get",null);
+            return await _cusServiceFactory.Invoke<IEnumerable<WeatherForecast>>(nameof(IWeatherForecastService.Get),null);
         }
 
         [HttpGet("greeting")]
         public async Task<string> GreetingAsync(string name)
         {
-            var result =await _cusServiceFactory.Invoke<string>("GreetingAsync", new object[] { name });
+            var result =await _cusServiceFactory.Invoke<string>(nameof(IWeatherForecastService.GreetingAsync), new object[] { name });
             return result;
         }
 
         [HttpGet("empty")]
         public Task GetEmpty()
         {
-            return _cusServiceFactory.Invoke("GetEmpty", null);
+            return _cusServiceFactory.Invoke(nameof(IWeatherForecastService.GetEmpty), null);
         }
     }
 }

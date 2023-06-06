@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "EKPsoo1x2wPGJfY1Fdqfo+SusGg6MuKyQamu5KDfWthSwXK47QPp9+1k467kPMIBzrhq2VlST6+o8OPSZSwUxw==",
   "success": true,
   "projectFilePath": "D:\\GitHub\\AspNetCoreSimpleAop\\AopLibraryTest\\AopLibraryTest.csproj",
@@ -12,6 +13,20 @@
     "D:\\Program Files\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "D:\\Program Files\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
     "D:\\Program Files\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+=======
+  "dgSpecHash": "vZ7u8iroJP+T0pvEwwwzRomPe+e1MJzGaNW0Fl8jFpwuvSjk+VH0Sach7B0yT4HhDO8hDTk9TkGh4IX9eRr3ow==",
+  "success": true,
+  "projectFilePath": "G:\\Users\\GitHub\\AspNetCoreSimpleAop\\AopLibraryTest\\AopLibraryTest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\86130\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.1\\microsoft.aspnetcore.openapi.7.0.1.nupkg.sha512",
+    "C:\\Users\\86130\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\86130\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\86130\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\86130\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "C:\\Users\\86130\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "C:\\Users\\86130\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "C:\\Users\\86130\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+>>>>>>> 33e579f16888150517efb75ee6f0d2f71f685b7f
   ],
   "logs": []
 }
