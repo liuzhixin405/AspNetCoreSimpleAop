@@ -11,10 +11,7 @@ D:\GitHub\AspNetCoreSimpleAop\AopLibraryTest\bin\Debug\net7.0\Swashbuckle.AspNet
 D:\GitHub\AspNetCoreSimpleAop\AopLibraryTest\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\GitHub\AspNetCoreSimpleAop\AopLibraryTest\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\GitHub\AspNetCoreSimpleAop\AopLibraryTest\bin\Debug\net7.0\AopLibrary.dll
-D:\GitHub\AspNetCoreSimpleAop\AopLibraryTest\bin\Debug\net7.0\StartupDiagnostics.dll
 D:\GitHub\AspNetCoreSimpleAop\AopLibraryTest\bin\Debug\net7.0\AopLibrary.pdb
-D:\GitHub\AspNetCoreSimpleAop\AopLibraryTest\bin\Debug\net7.0\StartupDiagnostics.pdb
-D:\GitHub\AspNetCoreSimpleAop\AopLibraryTest\bin\Debug\net7.0\StartupDiagnostics.xml
 D:\GitHub\AspNetCoreSimpleAop\AopLibraryTest\obj\Debug\net7.0\AopLibraryTest.csproj.AssemblyReference.cache
 D:\GitHub\AspNetCoreSimpleAop\AopLibraryTest\obj\Debug\net7.0\AopLibraryTest.GeneratedMSBuildEditorConfig.editorconfig
 D:\GitHub\AspNetCoreSimpleAop\AopLibraryTest\obj\Debug\net7.0\AopLibraryTest.AssemblyInfoInputs.cache
@@ -36,3 +33,7 @@ D:\GitHub\AspNetCoreSimpleAop\AopLibraryTest\obj\Debug\net7.0\refint\AopLibraryT
 D:\GitHub\AspNetCoreSimpleAop\AopLibraryTest\obj\Debug\net7.0\AopLibraryTest.pdb
 D:\GitHub\AspNetCoreSimpleAop\AopLibraryTest\obj\Debug\net7.0\AopLibraryTest.genruntimeconfig.cache
 D:\GitHub\AspNetCoreSimpleAop\AopLibraryTest\obj\Debug\net7.0\ref\AopLibraryTest.dll
+D:\github\AspNetCoreSimpleAop\AopLibraryTest\obj\Debug\net7.0\AopLibraryTest.sourcelink.json
+D:\github\AspNetCoreSimpleAop\AopLibraryTest\bin\Debug\net7.0\StartupDiagnostics.dll
+D:\github\AspNetCoreSimpleAop\AopLibraryTest\bin\Debug\net7.0\StartupDiagnostics.pdb
+D:\github\AspNetCoreSimpleAop\AopLibraryTest\bin\Debug\net7.0\StartupDiagnostics.xml

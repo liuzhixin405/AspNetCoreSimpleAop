@@ -12,7 +12,6 @@ namespace AopLibrary
         public static IServiceCollection AddSimpleAop(this IServiceCollection service)
         {
             service.AddSingleton(typeof(IRootServiceFactory<>), typeof(RootServiceFactory<>));
-            service.AddSingleton(typeof(ISimpleAop), typeof(DefaultAOP));
             return service;
         }
     }

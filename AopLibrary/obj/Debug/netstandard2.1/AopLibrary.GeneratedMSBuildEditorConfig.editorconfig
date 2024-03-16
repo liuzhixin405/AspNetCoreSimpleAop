@@ -1,3 +1,5 @@
 is_global = true
 build_property.RootNamespace = AopLibrary
-build_property.ProjectDir = D:\GitHub\AspNetCoreSimpleAop\AopLibrary\
+build_property.ProjectDir = D:\github\AspNetCoreSimpleAop\AopLibrary\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

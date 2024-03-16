@@ -30,7 +30,6 @@ D:\GitHub\AspNetCoreSimpleAop\StartupDiagnostics\bin\Debug\net7.0\StartupDiagnos
 D:\GitHub\AspNetCoreSimpleAop\StartupDiagnostics\bin\Debug\net7.0\StartupDiagnostics.dll
 D:\GitHub\AspNetCoreSimpleAop\StartupDiagnostics\bin\Debug\net7.0\StartupDiagnostics.pdb
 D:\GitHub\AspNetCoreSimpleAop\StartupDiagnostics\bin\Debug\net7.0\StartupDiagnostics.xml
-D:\GitHub\AspNetCoreSimpleAop\StartupDiagnostics\obj\Debug\net7.0\StartupDiagnostics.csproj.AssemblyReference.cache
 D:\GitHub\AspNetCoreSimpleAop\StartupDiagnostics\obj\Debug\net7.0\StartupDiagnostics.GeneratedMSBuildEditorConfig.editorconfig
 D:\GitHub\AspNetCoreSimpleAop\StartupDiagnostics\obj\Debug\net7.0\StartupDiagnostics.AssemblyInfoInputs.cache
 D:\GitHub\AspNetCoreSimpleAop\StartupDiagnostics\obj\Debug\net7.0\StartupDiagnostics.AssemblyInfo.cs
@@ -40,3 +39,4 @@ D:\GitHub\AspNetCoreSimpleAop\StartupDiagnostics\obj\Debug\net7.0\refint\Startup
 D:\GitHub\AspNetCoreSimpleAop\StartupDiagnostics\obj\Debug\net7.0\StartupDiagnostics.xml
 D:\GitHub\AspNetCoreSimpleAop\StartupDiagnostics\obj\Debug\net7.0\StartupDiagnostics.pdb
 D:\GitHub\AspNetCoreSimpleAop\StartupDiagnostics\obj\Debug\net7.0\ref\StartupDiagnostics.dll
+D:\github\AspNetCoreSimpleAop\StartupDiagnostics\obj\Debug\net7.0\StartupDiagnostics.sourcelink.json

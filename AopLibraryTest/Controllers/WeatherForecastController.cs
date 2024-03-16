@@ -1,4 +1,5 @@
 using AopLibrary;
+using AopLibrary.CusImplement;
 using Microsoft.AspNetCore.Mvc;
 using System.Reflection;
 using System.Xml.Linq;
@@ -16,12 +17,15 @@ namespace AopLibraryTest.Controllers
         {
             _logger = logger;
             _cusServiceFactory = cusServiceFactory;
+            _cusServiceFactory.AddAop(new DefaultAOP())
+                .AddAop(new LogAop());
+           
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
         public async Task<IEnumerable<WeatherForecast>> Get()
         {
-            return await _cusServiceFactory.Invoke<IEnumerable<WeatherForecast>>(nameof(IWeatherForecastService.Get),null);
+            return await _cusServiceFactory.Invoke<IEnumerable<WeatherForecast>>(nameof(IWeatherForecastService.Get),null); //“Ï≤Ω
         }
 
         [HttpGet("greeting")]
@@ -34,7 +38,7 @@ namespace AopLibraryTest.Controllers
         [HttpGet("empty")]
         public Task GetEmpty()
         {
-            return _cusServiceFactory.Invoke(nameof(IWeatherForecastService.GetEmpty), null);
+            return _cusServiceFactory.Invoke(nameof(IWeatherForecastService.GetEmpty), null);    //Õ¨≤Ω
         }
     }
 }

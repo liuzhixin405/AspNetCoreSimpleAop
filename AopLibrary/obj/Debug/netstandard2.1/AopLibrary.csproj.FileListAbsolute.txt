@@ -8,3 +8,4 @@ D:\GitHub\AspNetCoreSimpleAop\AopLibrary\obj\Debug\netstandard2.1\AopLibrary.Ass
 D:\GitHub\AspNetCoreSimpleAop\AopLibrary\obj\Debug\netstandard2.1\AopLibrary.csproj.CoreCompileInputs.cache
 D:\GitHub\AspNetCoreSimpleAop\AopLibrary\obj\Debug\netstandard2.1\AopLibrary.dll
 D:\GitHub\AspNetCoreSimpleAop\AopLibrary\obj\Debug\netstandard2.1\AopLibrary.pdb
+D:\github\AspNetCoreSimpleAop\AopLibrary\obj\Debug\netstandard2.1\AopLibrary.sourcelink.json
