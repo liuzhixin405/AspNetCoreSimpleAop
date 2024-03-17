@@ -19,8 +19,6 @@ namespace AopLibraryTest
 
             builder.Services.AddSimpleAop();
             builder.Services.AddSingleton<IWeatherForecastService, WeatherForecastService>();
-            builder.Services.AddSingleton(typeof(ISimpleAop), typeof(DefaultAOP));
-            builder.Services.AddSingleton<ISimpleAop, LogAop>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

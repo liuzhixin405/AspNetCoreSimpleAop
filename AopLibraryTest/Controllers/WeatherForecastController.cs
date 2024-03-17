@@ -19,7 +19,7 @@ namespace AopLibraryTest.Controllers
             _cusServiceFactory = cusServiceFactory;
             _cusServiceFactory.AddAop(new DefaultAOP())
                 .AddAop(new LogAop());
-           
+
         }
 
         [HttpGet(Name = "GetWeatherForecast")]

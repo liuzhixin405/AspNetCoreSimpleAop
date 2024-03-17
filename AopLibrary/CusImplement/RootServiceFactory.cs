@@ -15,6 +15,7 @@ namespace AopLibrary.CusImplement
         public RootServiceFactory(T t)
         {
             _instance = t;
+             aopList ??= new List<ISimpleAop>();
         }
         private List<ISimpleAop> aopList;
 
@@ -74,7 +75,6 @@ namespace AopLibrary.CusImplement
 
         public IRootServiceFactory<T> AddAop(ISimpleAop simpleAop)
         {
-            aopList = aopList ?? new List<ISimpleAop>();
             aopList.Add(simpleAop); 
             return this;
         }
