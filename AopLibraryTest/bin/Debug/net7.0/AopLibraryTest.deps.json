@@ -17,6 +17,49 @@
           "AopLibraryTest.dll": {}
         }
       },
+      "Atesh.Metalama/1.2.1": {
+        "dependencies": {
+          "Metalama.Framework": "2024.0.7"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Atesh.Metalama.dll": {
+            "assemblyVersion": "1.2.1.0",
+            "fileVersion": "1.2.1.0"
+          }
+        }
+      },
+      "Metalama.Compiler/2024.0.7": {},
+      "Metalama.Framework/2024.0.7": {
+        "dependencies": {
+          "Metalama.Compiler": "2024.0.7",
+          "Metalama.Framework.Redist": "2024.0.7",
+          "Microsoft.CSharp": "4.7.0"
+        }
+      },
+      "Metalama.Framework.Redist/2024.0.7": {
+        "dependencies": {
+          "Metalama.Framework.RunTime": "2024.0.6",
+          "System.Collections.Immutable": "5.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Metalama.Framework.dll": {
+            "assemblyVersion": "2024.0.7.0",
+            "fileVersion": "2024.0.7.0"
+          },
+          "lib/net6.0/Metalama.SystemTypes.dll": {
+            "assemblyVersion": "2024.0.7.0",
+            "fileVersion": "2024.0.7.0"
+          }
+        }
+      },
+      "Metalama.Framework.RunTime/2024.0.6": {
+        "runtime": {
+          "lib/net6.0/Metalama.Framework.RunTime.dll": {
+            "assemblyVersion": "2024.0.6.0",
+            "fileVersion": "2024.0.6.0"
+          }
+        }
+      },
       "Microsoft.AspNetCore.OpenApi/7.0.1": {
         "dependencies": {
           "Microsoft.OpenApi": "1.4.3"
@@ -28,6 +71,7 @@
           }
         }
       },
+      "Microsoft.CSharp/4.7.0": {},
       "Microsoft.Extensions.ApiDescription.Server/6.0.5": {},
       "Microsoft.Extensions.DependencyInjection.Abstractions/7.0.0": {},
       "Microsoft.OpenApi/1.4.3": {
@@ -76,8 +120,10 @@
           }
         }
       },
+      "System.Collections.Immutable/5.0.0": {},
       "AopLibrary/1.0.0": {
         "dependencies": {
+          "Atesh.Metalama": "1.2.1",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
         },
         "runtime": {
@@ -97,12 +143,54 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Atesh.Metalama/1.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GyT+tJ4pDD2ZvC0QitMsVv5m7CoGPQRN66z0Sw1DnYOvMwgOyYqDorJ615C50g+rE4esaBalWHNm5qFr8gKV+Q==",
+      "path": "atesh.metalama/1.2.1",
+      "hashPath": "atesh.metalama.1.2.1.nupkg.sha512"
+    },
+    "Metalama.Compiler/2024.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BL+Nl2SQ37N4hJDCEQQxbjU8gHbJzVg73FNPIcVMzxNS2oKqrugw9k7unML8vlRbQuHAwXfAniafKcdpstGJJQ==",
+      "path": "metalama.compiler/2024.0.7",
+      "hashPath": "metalama.compiler.2024.0.7.nupkg.sha512"
+    },
+    "Metalama.Framework/2024.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FcgIBrJPd904RThmA76C0P3IZ1uAXmbZj/zR5uRIj+gnAtiH8Ah7BbzN3jVJ9Qsa6duj6X21KF/xmJ65f5W1Cw==",
+      "path": "metalama.framework/2024.0.7",
+      "hashPath": "metalama.framework.2024.0.7.nupkg.sha512"
+    },
+    "Metalama.Framework.Redist/2024.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0lLijUoP3klUl5mDiH7+y0Aq8m0Y3dh5f6X8mOmUKxlrDs1OskkTQap7H8E1XVraEQ72f4+mWbqQGJFU8lLjCw==",
+      "path": "metalama.framework.redist/2024.0.7",
+      "hashPath": "metalama.framework.redist.2024.0.7.nupkg.sha512"
+    },
+    "Metalama.Framework.RunTime/2024.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GKRglc7fXj8Fk0BWW90tCZZIl+B8ZIy0tkdeekhD1wc9YuJzozZb1QOwZtEmIM4sUQrbPNhJn3jJhcio8DVkOA==",
+      "path": "metalama.framework.runtime/2024.0.6",
+      "hashPath": "metalama.framework.runtime.2024.0.6.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.OpenApi/7.0.1": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-rHaFl7SAHM59bwjcmcJMDyAfISkUDZi68iRSrzOZkGzAct72dqnG+w87+aycpayovZ3YLBZXL+6Oh6hAs5rH1w==",
       "path": "microsoft.aspnetcore.openapi/7.0.1",
       "hashPath": "microsoft.aspnetcore.openapi.7.0.1.nupkg.sha512"
+    },
+    "Microsoft.CSharp/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "path": "microsoft.csharp/4.7.0",
+      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
     },
     "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
       "type": "package",
@@ -152,6 +240,13 @@
       "sha512": "sha512-1Hh3atb3pi8c+v7n4/3N80Jj8RvLOXgWxzix6w3OZhB7zBGRwsy7FWr4e3hwgPweSBpwfElqj4V4nkjYabH9nQ==",
       "path": "swashbuckle.aspnetcore.swaggerui/6.4.0",
       "hashPath": "swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+    },
+    "System.Collections.Immutable/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FXkLXiK0sVVewcso0imKQoOxjoPAj42R8HtjjbSjVPAzwDfzoyoznWxgA3c38LDbN9SJux1xXoXYAhz98j7r2g==",
+      "path": "system.collections.immutable/5.0.0",
+      "hashPath": "system.collections.immutable.5.0.0.nupkg.sha512"
     },
     "AopLibrary/1.0.0": {
       "type": "project",

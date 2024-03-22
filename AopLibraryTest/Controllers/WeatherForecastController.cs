@@ -13,13 +13,14 @@ namespace AopLibraryTest.Controllers
         private readonly ILogger<WeatherForecastController> _logger;
         private readonly IRootServiceFactory<IWeatherForecastService> _cusServiceFactory;
        
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, IRootServiceFactory<IWeatherForecastService> cusServiceFactory)
+        private readonly IOrderBusiness orderBusiness;
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IRootServiceFactory<IWeatherForecastService> cusServiceFactory, IOrderBusiness orderBusiness)
         {
             _logger = logger;
             _cusServiceFactory = cusServiceFactory;
             _cusServiceFactory.AddAop(new DefaultAOP())
                 .AddAop(new LogAop());
-
+            this.orderBusiness = orderBusiness;
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
@@ -39,6 +40,11 @@ namespace AopLibraryTest.Controllers
         public Task GetEmpty()
         {
             return _cusServiceFactory.Invoke(nameof(IWeatherForecastService.GetEmpty), null);    //Í¬²½
+        }
+        [HttpGet("Order")]
+        public string Order()
+        {
+            return orderBusiness.Get("hello");
         }
     }
 }

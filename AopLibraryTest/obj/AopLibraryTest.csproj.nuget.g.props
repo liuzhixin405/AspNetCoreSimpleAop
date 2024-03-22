@@ -15,8 +15,11 @@
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)microsoft.extensions.apidescription.server\6.0.5\build\Microsoft.Extensions.ApiDescription.Server.props" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.apidescription.server\6.0.5\build\Microsoft.Extensions.ApiDescription.Server.props')" />
     <Import Project="$(NuGetPackageRoot)swashbuckle.aspnetcore\6.4.0\build\Swashbuckle.AspNetCore.props" Condition="Exists('$(NuGetPackageRoot)swashbuckle.aspnetcore\6.4.0\build\Swashbuckle.AspNetCore.props')" />
+    <Import Project="$(NuGetPackageRoot)metalama.compiler\2024.0.7\buildTransitive\Metalama.Compiler.props" Condition="Exists('$(NuGetPackageRoot)metalama.compiler\2024.0.7\buildTransitive\Metalama.Compiler.props')" />
+    <Import Project="$(NuGetPackageRoot)metalama.framework\2024.0.7\buildTransitive\Metalama.Framework.props" Condition="Exists('$(NuGetPackageRoot)metalama.framework\2024.0.7\buildTransitive\Metalama.Framework.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">C:\Users\lzx\.nuget\packages\microsoft.extensions.apidescription.server\6.0.5</PkgMicrosoft_Extensions_ApiDescription_Server>
+    <PkgMetalama_Framework Condition=" '$(PkgMetalama_Framework)' == '' ">C:\Users\lzx\.nuget\packages\metalama.framework\2024.0.7</PkgMetalama_Framework>
   </PropertyGroup>
 </Project>

@@ -19,6 +19,7 @@ namespace AopLibraryTest
 
             builder.Services.AddSimpleAop();
             builder.Services.AddSingleton<IWeatherForecastService, WeatherForecastService>();
+            builder.Services.AddTransient<IOrderBusiness, OrderBusiness>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -28,6 +29,7 @@ namespace AopLibraryTest
                 app.UseSwaggerUI();
             }
 
+            app.UseMiddleware<AopMiddleware>(); 
             app.UseHttpsRedirection();
 
             app.UseAuthorization();

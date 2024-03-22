@@ -37,3 +37,7 @@ D:\github\AspNetCoreSimpleAop\AopLibraryTest\obj\Debug\net7.0\AopLibraryTest.sou
 D:\github\AspNetCoreSimpleAop\AopLibraryTest\bin\Debug\net7.0\StartupDiagnostics.dll
 D:\github\AspNetCoreSimpleAop\AopLibraryTest\bin\Debug\net7.0\StartupDiagnostics.pdb
 D:\github\AspNetCoreSimpleAop\AopLibraryTest\bin\Debug\net7.0\StartupDiagnostics.xml
+D:\github\AspNetCoreSimpleAop\AopLibraryTest\bin\Debug\net7.0\Atesh.Metalama.dll
+D:\github\AspNetCoreSimpleAop\AopLibraryTest\bin\Debug\net7.0\Metalama.Framework.dll
+D:\github\AspNetCoreSimpleAop\AopLibraryTest\bin\Debug\net7.0\Metalama.SystemTypes.dll
+D:\github\AspNetCoreSimpleAop\AopLibraryTest\bin\Debug\net7.0\Metalama.Framework.RunTime.dll

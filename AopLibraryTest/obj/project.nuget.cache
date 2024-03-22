@@ -1,17 +1,24 @@
 {
   "version": 2,
-  "dgSpecHash": "oOXTP03j3U3cfRfdhozYYmA6QRsjTFZG8lZu9mjCjwHFcAqVG/F0cjya6nQNqjdb8rdC0srTseXQ80Ab2e0Vbw==",
+  "dgSpecHash": "GN5duoOvVVdMAGoNY3/uMAPlePcIfECXDrfA7RVsdlkRCjWlPGYcJ1GGY3dWN0rgbp1ujywFAC3fxgcCPKadZA==",
   "success": true,
   "projectFilePath": "D:\\github\\AspNetCoreSimpleAop\\AopLibraryTest\\AopLibraryTest.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\lzx\\.nuget\\packages\\atesh.metalama\\1.2.1\\atesh.metalama.1.2.1.nupkg.sha512",
+    "C:\\Users\\lzx\\.nuget\\packages\\metalama.compiler\\2024.0.7\\metalama.compiler.2024.0.7.nupkg.sha512",
+    "C:\\Users\\lzx\\.nuget\\packages\\metalama.framework\\2024.0.7\\metalama.framework.2024.0.7.nupkg.sha512",
+    "C:\\Users\\lzx\\.nuget\\packages\\metalama.framework.redist\\2024.0.7\\metalama.framework.redist.2024.0.7.nupkg.sha512",
+    "C:\\Users\\lzx\\.nuget\\packages\\metalama.framework.runtime\\2024.0.6\\metalama.framework.runtime.2024.0.6.nupkg.sha512",
     "C:\\Users\\lzx\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.1\\microsoft.aspnetcore.openapi.7.0.1.nupkg.sha512",
+    "C:\\Users\\lzx\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\lzx\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\lzx\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\lzx\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
     "C:\\Users\\lzx\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "C:\\Users\\lzx\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "C:\\Users\\lzx\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
-    "C:\\Users\\lzx\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+    "C:\\Users\\lzx\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
+    "C:\\Users\\lzx\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

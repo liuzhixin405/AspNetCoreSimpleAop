@@ -1,2 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" />
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Condition=" '$(TargetFramework)' == 'net7.0' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)metalama.compiler\2024.0.7\buildTransitive\Metalama.Compiler.targets" Condition="Exists('$(NuGetPackageRoot)metalama.compiler\2024.0.7\buildTransitive\Metalama.Compiler.targets')" />
+    <Import Project="$(NuGetPackageRoot)metalama.framework\2024.0.7\buildTransitive\Metalama.Framework.targets" Condition="Exists('$(NuGetPackageRoot)metalama.framework\2024.0.7\buildTransitive\Metalama.Framework.targets')" />
+  </ImportGroup>
+  <ImportGroup Condition=" '$(TargetFramework)' == 'netstandard2.1' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)metalama.compiler\2024.0.7\buildTransitive\Metalama.Compiler.targets" Condition="Exists('$(NuGetPackageRoot)metalama.compiler\2024.0.7\buildTransitive\Metalama.Compiler.targets')" />
+    <Import Project="$(NuGetPackageRoot)metalama.framework\2024.0.7\buildTransitive\Metalama.Framework.targets" Condition="Exists('$(NuGetPackageRoot)metalama.framework\2024.0.7\buildTransitive\Metalama.Framework.targets')" />
+  </ImportGroup>
+</Project>
