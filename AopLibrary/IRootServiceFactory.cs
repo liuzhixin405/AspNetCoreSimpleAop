@@ -10,6 +10,6 @@ namespace AopLibrary
         Task Invoke(string methodName, object?[]? args);
 
         IRootServiceFactory<T> AddAop(ISimpleAop simpleAop);
-       
+        T GetServiceInstance();
     }
 }

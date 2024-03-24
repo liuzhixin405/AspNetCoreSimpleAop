@@ -11,6 +11,10 @@ namespace AopLibrary.CusImplement
     internal class RootServiceFactory<T> : IRootServiceFactory<T>
     {
         private T _instance { get; set; }
+        public T GetServiceInstance()
+        {
+            return _instance;
+        }
         //rivate readonly IServiceProvider _serviceProvider;//没有业务需要
         public RootServiceFactory(T t)
         {
@@ -34,7 +38,14 @@ namespace AopLibrary.CusImplement
             if (task.GetType().BaseType.Name == "Task")
                 return await (Task<TResponse?>)task;
             else
+                if (task is Task)
+            {
+                return await (task as Task<TResponse?>);
+            }
+            else
+            {
                 return (TResponse?)task;
+            }
         }
 
         public async Task Invoke(string methodName, object?[]? args)
