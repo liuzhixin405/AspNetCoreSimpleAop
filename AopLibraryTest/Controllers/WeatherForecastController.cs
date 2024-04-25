@@ -1,5 +1,4 @@
 using AopLibrary;
-using AopLibrary.CusImplement;
 using Microsoft.AspNetCore.Mvc;
 using System.Reflection;
 using System.Xml.Linq;
@@ -13,20 +12,16 @@ namespace AopLibraryTest.Controllers
         private readonly ILogger<WeatherForecastController> _logger;
         private readonly IRootServiceFactory<IWeatherForecastService> _cusServiceFactory;
        
-        private readonly IOrderBusiness orderBusiness;
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, IRootServiceFactory<IWeatherForecastService> cusServiceFactory, IOrderBusiness orderBusiness)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IRootServiceFactory<IWeatherForecastService> cusServiceFactory)
         {
             _logger = logger;
             _cusServiceFactory = cusServiceFactory;
-            _cusServiceFactory.AddAop(new DefaultAOP())
-                .AddAop(new LogAop());
-            this.orderBusiness = orderBusiness;
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
         public async Task<IEnumerable<WeatherForecast>> Get()
         {
-            return await _cusServiceFactory.Invoke<IEnumerable<WeatherForecast>>(nameof(IWeatherForecastService.Get),null); //“Ï≤Ω
+            return await _cusServiceFactory.Invoke<IEnumerable<WeatherForecast>>(nameof(IWeatherForecastService.Get),null);
         }
 
         [HttpGet("greeting")]
@@ -39,12 +34,7 @@ namespace AopLibraryTest.Controllers
         [HttpGet("empty")]
         public Task GetEmpty()
         {
-            return _cusServiceFactory.Invoke(nameof(IWeatherForecastService.GetEmpty), null);    //Õ¨≤Ω
-        }
-        [HttpGet("Order")]
-        public string Order()
-        {
-            return orderBusiness.Get("hello");
+            return _cusServiceFactory.Invoke(nameof(IWeatherForecastService.GetEmpty), null);
         }
     }
 }

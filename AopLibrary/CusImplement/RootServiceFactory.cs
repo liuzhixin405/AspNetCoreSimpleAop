@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.WebSockets;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,17 +10,14 @@ namespace AopLibrary.CusImplement
     internal class RootServiceFactory<T> : IRootServiceFactory<T>
     {
         private T _instance { get; set; }
-        public T GetServiceInstance()
-        {
-            return _instance;
-        }
-        //rivate readonly IServiceProvider _serviceProvider;//没有业务需要
-        public RootServiceFactory(T t)
+        public RootServiceFactory(T t, ISimpleAop aop)
         {
             _instance = t;
-             aopList ??= new List<ISimpleAop>();
+            _aop = aop;
         }
-        private List<ISimpleAop> aopList;
+
+        private ISimpleAop _aop { get; set; }
+        private T Imp => _instance;
 
         public async Task<TResponse?> Invoke<TResponse>(string methodName, object?[]? args)
         {
@@ -38,14 +34,7 @@ namespace AopLibrary.CusImplement
             if (task.GetType().BaseType.Name == "Task")
                 return await (Task<TResponse?>)task;
             else
-                if (task is Task)
-            {
-                return await (task as Task<TResponse?>);
-            }
-            else
-            {
                 return (TResponse?)task;
-            }
         }
 
         public async Task Invoke(string methodName, object?[]? args)
@@ -64,30 +53,10 @@ namespace AopLibrary.CusImplement
 
         private async Task<object?> InvokeCore(MethodInfo? targetMethod, object?[]? args)
         {
-
-            // 执行前置切面
-            foreach (var aspect in aopList)
-            {
-                await aspect.Before(args);
-            }
-
-            // 执行目标方法
+            await _aop.Before(args);
             var result = targetMethod.Invoke(_instance, args);
-
-            // 执行后置切面
-            foreach (var aspect in aopList)
-            {
-                result = await aspect.After(result);
-            }
-
-            aopList.Clear();
-            return result;
-        }
-
-        public IRootServiceFactory<T> AddAop(ISimpleAop simpleAop)
-        {
-            aopList.Add(simpleAop); 
-            return this;
+            var afterResult = await _aop.After(result);
+            return afterResult;
         }
     }
 }

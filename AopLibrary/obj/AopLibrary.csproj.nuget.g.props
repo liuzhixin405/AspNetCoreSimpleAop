@@ -7,26 +7,9 @@
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\lzx\.nuget\packages\</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.8.0</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.10.0</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="C:\Users\lzx\.nuget\packages\" />
   </ItemGroup>
-  <ImportGroup Condition=" '$(TargetFramework)' == '' AND '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)metalama.compiler\2024.0.7\buildMultiTargeting\Metalama.Compiler.props" Condition="Exists('$(NuGetPackageRoot)metalama.compiler\2024.0.7\buildMultiTargeting\Metalama.Compiler.props')" />
-  </ImportGroup>
-  <ImportGroup Condition=" '$(TargetFramework)' == 'net7.0' AND '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)metalama.compiler\2024.0.7\buildTransitive\Metalama.Compiler.props" Condition="Exists('$(NuGetPackageRoot)metalama.compiler\2024.0.7\buildTransitive\Metalama.Compiler.props')" />
-    <Import Project="$(NuGetPackageRoot)metalama.framework\2024.0.7\buildTransitive\Metalama.Framework.props" Condition="Exists('$(NuGetPackageRoot)metalama.framework\2024.0.7\buildTransitive\Metalama.Framework.props')" />
-  </ImportGroup>
-  <ImportGroup Condition=" '$(TargetFramework)' == 'netstandard2.1' AND '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)metalama.compiler\2024.0.7\buildTransitive\Metalama.Compiler.props" Condition="Exists('$(NuGetPackageRoot)metalama.compiler\2024.0.7\buildTransitive\Metalama.Compiler.props')" />
-    <Import Project="$(NuGetPackageRoot)metalama.framework\2024.0.7\buildTransitive\Metalama.Framework.props" Condition="Exists('$(NuGetPackageRoot)metalama.framework\2024.0.7\buildTransitive\Metalama.Framework.props')" />
-  </ImportGroup>
-  <PropertyGroup Condition=" '$(TargetFramework)' == 'net7.0' AND '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgMetalama_Framework Condition=" '$(PkgMetalama_Framework)' == '' ">C:\Users\lzx\.nuget\packages\metalama.framework\2024.0.7</PkgMetalama_Framework>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard2.1' AND '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgMetalama_Framework Condition=" '$(PkgMetalama_Framework)' == '' ">C:\Users\lzx\.nuget\packages\metalama.framework\2024.0.7</PkgMetalama_Framework>
-  </PropertyGroup>
 </Project>

@@ -9,6 +9,11 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System.Text;
 using ServiceDescriptorsFactory;
+using System.Collections.Generic;
+using System.Reflection;
+using System.IO;
+using Newtonsoft.Json;
+using Contract;
 
 // Use a Hosting Startup Attribute to identify the IHostingStartup implementation.
 [assembly: HostingStartup(typeof(StartupDiagnostics.StartupDiagnosticsHostingStartup))]
@@ -42,6 +47,10 @@ namespace StartupDiagnostics
                 // Implement a startup filter that is used to register 
                 // two middleware components.
                 services.AddSingleton<IStartupFilter, DiagnosticMiddlewareStartupFilter>();
+
+                services.Initialize();
+                services.AddSingleton<IStartupFilter, MyControllerFilter>();
+                services.AddSingleton(typeof(PluginManager));
             })
             //    .ConfigureKestrel(options =>
             //{
@@ -51,6 +60,54 @@ namespace StartupDiagnostics
         }
     }
 
+    public class MyControllerFilter : IStartupFilter
+    {
+        private readonly PluginManager pluginManager;
+        List<string> controllers = new List<string> { "First","Second" };
+        public MyControllerFilter(PluginManager pluginManager)
+        {
+            this.pluginManager = pluginManager;
+            controllers.ForEach(x => pluginManager.LoadPlugins($"{Directory.GetCurrentDirectory()}\\lib\\", $"{x}.Impl.dll"));
+        }
+        Action<IApplicationBuilder> IStartupFilter.Configure(Action<IApplicationBuilder> next)
+        {
+            BindingFlags bindingFlags = BindingFlags.Instance | BindingFlags.Public | BindingFlags.DeclaredOnly;
+            return app =>
+            {
+
+                app.UseRouting();
+                app.UseEndpoints(endpoints =>
+                {
+                    foreach (IPlugin item in pluginManager.GetPlugins())
+                    {
+                        foreach (MethodInfo mi in item.GetType().GetMethods(bindingFlags))
+                        {
+                            endpoints.MapPost($"/{item.GetType().Name.Replace("Service", "")}/{mi.Name}", async (string parameters, HttpContext cotext) =>
+                            {
+
+                                var task = (Task)mi.Invoke(item, new object[] { parameters });
+                                if (task is Task apiTask)
+                                {
+                                    await apiTask;
+
+                                    // 如果任务有返回结果
+                                    if (apiTask is Task<object> resultTask)
+                                    {
+                                        var res = await resultTask;
+                                        return Results.Ok(JsonConvert.SerializeObject(res));
+                                    }
+                                }
+
+                                // 如果方法没有返回 Task<ApiResult>，返回 NotFound
+                                return Results.NotFound("Method execution did not return a result.");
+                            });
+                        }
+                    }
+                });
+                next(app);
+            };
+        }
+    }
     /// <summary>
     /// Startup filter for diagnostic middleware.
     /// </summary>

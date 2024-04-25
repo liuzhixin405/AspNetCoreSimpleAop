@@ -1,6 +1,4 @@
 using AopLibrary;
-using AopLibrary.CusImplement;
-using Microsoft.AspNetCore.Server.Kestrel.Core;
 
 namespace AopLibraryTest
 {
@@ -11,15 +9,14 @@ namespace AopLibraryTest
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-      
+
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-
-            builder.Services.AddSimpleAop();
             builder.Services.AddSingleton<IWeatherForecastService, WeatherForecastService>();
-            builder.Services.AddTransient<IOrderBusiness, OrderBusiness>();
+            builder.Services.AddSimpleAop();
+            builder.Services.AddSingleton<ISimpleAop, ReplaceDefaultAop>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -29,7 +26,6 @@ namespace AopLibraryTest
                 app.UseSwaggerUI();
             }
 
-            app.UseMiddleware<AopMiddleware>(); 
             app.UseHttpsRedirection();
 
             app.UseAuthorization();

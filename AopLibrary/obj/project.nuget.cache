@@ -1,21 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "MR6euwBRB0+ykO8kKdu9yE0DL+uLitY1c9DesLsMX8NE8OP0D8uNcHMhN3dRZ9ARd7I3nRppvm0JZP94w8hLHA==",
+  "dgSpecHash": "ngrG6UT2iw0=",
   "success": true,
   "projectFilePath": "D:\\github\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\lzx\\.nuget\\packages\\atesh.metalama\\1.2.1\\atesh.metalama.1.2.1.nupkg.sha512",
-    "C:\\Users\\lzx\\.nuget\\packages\\metalama.compiler\\2024.0.7\\metalama.compiler.2024.0.7.nupkg.sha512",
-    "C:\\Users\\lzx\\.nuget\\packages\\metalama.framework\\2024.0.7\\metalama.framework.2024.0.7.nupkg.sha512",
-    "C:\\Users\\lzx\\.nuget\\packages\\metalama.framework.redist\\2024.0.7\\metalama.framework.redist.2024.0.7.nupkg.sha512",
-    "C:\\Users\\lzx\\.nuget\\packages\\metalama.framework.runtime\\2024.0.6\\metalama.framework.runtime.2024.0.6.nupkg.sha512",
-    "C:\\Users\\lzx\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\lzx\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
-    "C:\\Users\\lzx\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
-    "C:\\Users\\lzx\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
-    "C:\\Users\\lzx\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
-    "C:\\Users\\lzx\\.nuget\\packages\\system.numerics.vectors\\4.4.0\\system.numerics.vectors.4.4.0.nupkg.sha512",
-    "C:\\Users\\lzx\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.3\\system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512"
+    "C:\\Users\\lzx\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }
