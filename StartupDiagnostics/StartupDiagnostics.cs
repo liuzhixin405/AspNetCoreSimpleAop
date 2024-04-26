@@ -54,6 +54,7 @@ namespace StartupDiagnostics
                 services.Initialize();
                 services.AddSingleton<IStartupFilter, MyControllerFilter>();
                 services.AddSingleton(typeof(PluginManager));
+                services.AddHostedService<FileWatcherService>();
 
             });
         }
