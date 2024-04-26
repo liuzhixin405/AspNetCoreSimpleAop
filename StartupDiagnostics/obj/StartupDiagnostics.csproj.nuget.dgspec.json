@@ -10,11 +10,11 @@
         "projectUniqueName": "D:\\github\\AspNetCoreSimpleAop\\AutofacRegister\\AutofacRegister.csproj",
         "projectName": "AutofacRegister",
         "projectPath": "D:\\github\\AspNetCoreSimpleAop\\AutofacRegister\\AutofacRegister.csproj",
-        "packagesPath": "C:\\Users\\lzx\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\victor.liu\\.nuget\\packages\\",
         "outputPath": "D:\\github\\AspNetCoreSimpleAop\\AutofacRegister\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lzx\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\victor.liu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -53,6 +53,10 @@
             "Autofac": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             }
           },
           "imports": [
@@ -71,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300-preview.24203.14/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -81,11 +85,11 @@
         "projectUniqueName": "D:\\github\\AspNetCoreSimpleAop\\Contract\\Contract.csproj",
         "projectName": "Contract",
         "projectPath": "D:\\github\\AspNetCoreSimpleAop\\Contract\\Contract.csproj",
-        "packagesPath": "C:\\Users\\lzx\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\victor.liu\\.nuget\\packages\\",
         "outputPath": "D:\\github\\AspNetCoreSimpleAop\\Contract\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lzx\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\victor.liu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -142,7 +146,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300-preview.24203.14/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -152,11 +156,11 @@
         "projectUniqueName": "D:\\github\\AspNetCoreSimpleAop\\IOrder.Repository\\IOrder.Repository.csproj",
         "projectName": "IOrder.Repository",
         "projectPath": "D:\\github\\AspNetCoreSimpleAop\\IOrder.Repository\\IOrder.Repository.csproj",
-        "packagesPath": "C:\\Users\\lzx\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\victor.liu\\.nuget\\packages\\",
         "outputPath": "D:\\github\\AspNetCoreSimpleAop\\IOrder.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lzx\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\victor.liu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -203,7 +207,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300-preview.24203.14/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -213,11 +217,11 @@
         "projectUniqueName": "D:\\github\\AspNetCoreSimpleAop\\Order.Repository\\Order.Repository.csproj",
         "projectName": "Order.Repository",
         "projectPath": "D:\\github\\AspNetCoreSimpleAop\\Order.Repository\\Order.Repository.csproj",
-        "packagesPath": "C:\\Users\\lzx\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\victor.liu\\.nuget\\packages\\",
         "outputPath": "D:\\github\\AspNetCoreSimpleAop\\Order.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lzx\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\victor.liu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -268,7 +272,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300-preview.24203.14/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -278,11 +282,11 @@
         "projectUniqueName": "D:\\github\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj",
         "projectName": "StartupDiagnostics",
         "projectPath": "D:\\github\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj",
-        "packagesPath": "C:\\Users\\lzx\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\victor.liu\\.nuget\\packages\\",
         "outputPath": "D:\\github\\AspNetCoreSimpleAop\\StartupDiagnostics\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lzx\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\victor.liu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -357,7 +361,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300-preview.24203.14/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

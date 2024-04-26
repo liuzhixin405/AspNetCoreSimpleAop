@@ -9,7 +9,8 @@ namespace AutofacRegister
     {
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterType<Repository>().As<IRepository>().InstancePerLifetimeScope();
+            //builder.RegisterType<Repository>().As<IRepository>().SingleInstance();
+            builder.RegisterType<RepositoryProvider>().As<IRepositoryProvider>().InstancePerLifetimeScope();
         }
     }
 }

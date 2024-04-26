@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using AutofacRegister;
 using Contract;
 using IOrder.Repository;
 using Microsoft.AspNetCore.Mvc;
@@ -7,12 +8,12 @@ namespace Impl
 {
     public class FirstImplService : IPlugin
     {
-        private IRepository reposttory;
+        private IRepositoryProvider reposttory;
         public FirstImplService()
         {
             using (var scope = CompositionRoot.BeginLifetimeScope())
             {
-                 reposttory = scope.Resolve<IRepository>();
+                 reposttory = scope.Resolve<IRepositoryProvider>();
                
             }
             //this.reposttory = CompositionRoot.BeginLifetimeScope().Resolve<IRepository>();
@@ -25,7 +26,7 @@ namespace Impl
 
         public Task<object> Get(string entity)
         {
-            return reposttory.GetOrder(entity);
+            return reposttory.GetRepository("Order").GetOrder(entity);
         }
 
         public async Task<object> Update( string entity)
