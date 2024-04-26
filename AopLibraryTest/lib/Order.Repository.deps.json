@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Order.Repository/1.0.0": {
+        "dependencies": {
+          "IOrder.Repository": "1.0.0"
+        },
+        "runtime": {
+          "Order.Repository.dll": {}
+        }
+      },
+      "IOrder.Repository/1.0.0": {
+        "runtime": {
+          "IOrder.Repository.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Order.Repository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IOrder.Repository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

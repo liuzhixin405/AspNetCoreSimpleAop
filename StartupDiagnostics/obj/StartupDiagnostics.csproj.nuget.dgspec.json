@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\github\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj": {}
+    "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj": {}
   },
   "projects": {
-    "D:\\github\\AspNetCoreSimpleAop\\AutofacRegister\\AutofacRegister.csproj": {
+    "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\AutofacRegister\\AutofacRegister.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\github\\AspNetCoreSimpleAop\\AutofacRegister\\AutofacRegister.csproj",
+        "projectUniqueName": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\AutofacRegister\\AutofacRegister.csproj",
         "projectName": "AutofacRegister",
-        "projectPath": "D:\\github\\AspNetCoreSimpleAop\\AutofacRegister\\AutofacRegister.csproj",
-        "packagesPath": "C:\\Users\\lzx\\.nuget\\packages\\",
-        "outputPath": "D:\\github\\AspNetCoreSimpleAop\\AutofacRegister\\obj\\",
+        "projectPath": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\AutofacRegister\\AutofacRegister.csproj",
+        "packagesPath": "C:\\Users\\victor.liu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\AutofacRegister\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lzx\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\victor.liu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,8 +29,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\github\\AspNetCoreSimpleAop\\Order.Repository\\Order.Repository.csproj": {
-                "projectPath": "D:\\github\\AspNetCoreSimpleAop\\Order.Repository\\Order.Repository.csproj"
+              "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\Order.Repository\\Order.Repository.csproj": {
+                "projectPath": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\Order.Repository\\Order.Repository.csproj"
               }
             }
           }
@@ -53,6 +53,10 @@
             "Autofac": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             }
           },
           "imports": [
@@ -71,21 +75,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300-preview.24203.14/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\github\\AspNetCoreSimpleAop\\Contract\\Contract.csproj": {
+    "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\Contract\\Contract.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\github\\AspNetCoreSimpleAop\\Contract\\Contract.csproj",
+        "projectUniqueName": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\Contract\\Contract.csproj",
         "projectName": "Contract",
-        "projectPath": "D:\\github\\AspNetCoreSimpleAop\\Contract\\Contract.csproj",
-        "packagesPath": "C:\\Users\\lzx\\.nuget\\packages\\",
-        "outputPath": "D:\\github\\AspNetCoreSimpleAop\\Contract\\obj\\",
+        "projectPath": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\Contract\\Contract.csproj",
+        "packagesPath": "C:\\Users\\victor.liu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\Contract\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lzx\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\victor.liu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -142,21 +146,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300-preview.24203.14/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\github\\AspNetCoreSimpleAop\\IOrder.Repository\\IOrder.Repository.csproj": {
+    "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\IOrder.Repository\\IOrder.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\github\\AspNetCoreSimpleAop\\IOrder.Repository\\IOrder.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\IOrder.Repository\\IOrder.Repository.csproj",
         "projectName": "IOrder.Repository",
-        "projectPath": "D:\\github\\AspNetCoreSimpleAop\\IOrder.Repository\\IOrder.Repository.csproj",
-        "packagesPath": "C:\\Users\\lzx\\.nuget\\packages\\",
-        "outputPath": "D:\\github\\AspNetCoreSimpleAop\\IOrder.Repository\\obj\\",
+        "projectPath": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\IOrder.Repository\\IOrder.Repository.csproj",
+        "packagesPath": "C:\\Users\\victor.liu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\IOrder.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lzx\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\victor.liu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -203,21 +207,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300-preview.24203.14/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\github\\AspNetCoreSimpleAop\\Order.Repository\\Order.Repository.csproj": {
+    "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\Order.Repository\\Order.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\github\\AspNetCoreSimpleAop\\Order.Repository\\Order.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\Order.Repository\\Order.Repository.csproj",
         "projectName": "Order.Repository",
-        "projectPath": "D:\\github\\AspNetCoreSimpleAop\\Order.Repository\\Order.Repository.csproj",
-        "packagesPath": "C:\\Users\\lzx\\.nuget\\packages\\",
-        "outputPath": "D:\\github\\AspNetCoreSimpleAop\\Order.Repository\\obj\\",
+        "projectPath": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\Order.Repository\\Order.Repository.csproj",
+        "packagesPath": "C:\\Users\\victor.liu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\Order.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lzx\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\victor.liu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -232,8 +236,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\github\\AspNetCoreSimpleAop\\IOrder.Repository\\IOrder.Repository.csproj": {
-                "projectPath": "D:\\github\\AspNetCoreSimpleAop\\IOrder.Repository\\IOrder.Repository.csproj"
+              "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\IOrder.Repository\\IOrder.Repository.csproj": {
+                "projectPath": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\IOrder.Repository\\IOrder.Repository.csproj"
               }
             }
           }
@@ -268,21 +272,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300-preview.24203.14/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\github\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj": {
+    "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\github\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj",
+        "projectUniqueName": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj",
         "projectName": "StartupDiagnostics",
-        "projectPath": "D:\\github\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj",
-        "packagesPath": "C:\\Users\\lzx\\.nuget\\packages\\",
-        "outputPath": "D:\\github\\AspNetCoreSimpleAop\\StartupDiagnostics\\obj\\",
+        "projectPath": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj",
+        "packagesPath": "C:\\Users\\victor.liu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lzx\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\victor.liu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -297,11 +301,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\github\\AspNetCoreSimpleAop\\AutofacRegister\\AutofacRegister.csproj": {
-                "projectPath": "D:\\github\\AspNetCoreSimpleAop\\AutofacRegister\\AutofacRegister.csproj"
+              "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\AutofacRegister\\AutofacRegister.csproj": {
+                "projectPath": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\AutofacRegister\\AutofacRegister.csproj"
               },
-              "D:\\github\\AspNetCoreSimpleAop\\Contract\\Contract.csproj": {
-                "projectPath": "D:\\github\\AspNetCoreSimpleAop\\Contract\\Contract.csproj"
+              "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\Contract\\Contract.csproj": {
+                "projectPath": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\Contract\\Contract.csproj"
               }
             }
           }
@@ -333,6 +337,14 @@
               "target": "Package",
               "version": "[6.1.0, )"
             },
+            "Microsoft.CodeAnalysis.CSharp": {
+              "target": "Package",
+              "version": "[4.10.0-2.final, )"
+            },
+            "Microsoft.CodeAnalysis.Common": {
+              "target": "Package",
+              "version": "[4.10.0-2.final, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
@@ -357,7 +369,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300-preview.24203.14/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

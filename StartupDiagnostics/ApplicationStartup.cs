@@ -21,7 +21,6 @@ namespace StartupDiagnostics
         )
         {
            
-
             var serviceProvider = CreateAutofacServiceProvider(
                 services
               );
@@ -38,10 +37,7 @@ namespace StartupDiagnostics
             container.Populate(services);
 
             container.RegisterModule(new RepositoryModule());
-           
-
-           
-
+   
             var buildContainer = container.Build();
 
             ServiceLocator.SetLocatorProvider(() => new AutofacServiceLocator(buildContainer));
@@ -52,6 +48,4 @@ namespace StartupDiagnostics
             return services;
         }
     }
-
-   
 }
