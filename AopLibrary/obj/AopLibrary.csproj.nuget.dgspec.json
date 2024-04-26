@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\github\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj": {}
+    "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj": {}
   },
   "projects": {
-    "D:\\github\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj": {
+    "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\github\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj",
         "projectName": "AopLibrary",
-        "projectPath": "D:\\github\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj",
+        "projectPath": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj",
         "packagesPath": "C:\\Users\\victor.liu\\.nuget\\packages\\",
-        "outputPath": "D:\\github\\AspNetCoreSimpleAop\\AopLibrary\\obj\\",
+        "outputPath": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
