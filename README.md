@@ -9,3 +9,4 @@ repository和plugin这两个模块通过反射来动态获取，已实现dll热�
 新增Metalama的aop功能
 程序集注入功能
 autofac注入
+module模块化等开发示例
