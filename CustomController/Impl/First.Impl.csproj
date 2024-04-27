@@ -9,9 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AutofacRegister\AutofacRegister.csproj" />
-    <ProjectReference Include="..\Contract\Contract.csproj" />
-    <ProjectReference Include="..\IOrder.Repository\IOrder.Repository.csproj" />
+    <ProjectReference Include="..\..\AutofacRegister\AutofacRegister.csproj" />
+    <ProjectReference Include="..\..\Contract\Contract.csproj" />
+    <ProjectReference Include="..\..\Repository\IOrder.Repository\IOrder.Repository.csproj" />
   </ItemGroup>
 
 </Project>

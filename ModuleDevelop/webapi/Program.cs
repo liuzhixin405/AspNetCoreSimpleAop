@@ -1,4 +1,6 @@
 
+using ModuleLib;
+
 namespace webapi
 {
     public class Program
@@ -13,9 +15,10 @@ namespace webapi
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-          
+            var moduleManager = new ModuleManager();
+            moduleManager.LoadModules(builder.Services);
             var app = builder.Build();
-
+            moduleManager.Configures(app);
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {

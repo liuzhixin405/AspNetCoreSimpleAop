@@ -12,8 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Order.Repository\Order.Repository.csproj" />
-	  
+    <ProjectReference Include="..\Repository\IOrder.Repository\IOrder.Repository.csproj" />
+    <ProjectReference Include="..\Repository\Order.Repository\Order.Repository.csproj" />
   </ItemGroup>
 
 </Project>

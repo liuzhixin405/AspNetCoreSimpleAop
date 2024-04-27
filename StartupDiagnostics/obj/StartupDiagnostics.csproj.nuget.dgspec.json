@@ -29,8 +29,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\github\\AspNetCoreSimpleAop\\Order.Repository\\Order.Repository.csproj": {
-                "projectPath": "D:\\github\\AspNetCoreSimpleAop\\Order.Repository\\Order.Repository.csproj"
+              "D:\\github\\AspNetCoreSimpleAop\\Repository\\IOrder.Repository\\IOrder.Repository.csproj": {
+                "projectPath": "D:\\github\\AspNetCoreSimpleAop\\Repository\\IOrder.Repository\\IOrder.Repository.csproj"
+              },
+              "D:\\github\\AspNetCoreSimpleAop\\Repository\\Order.Repository\\Order.Repository.csproj": {
+                "projectPath": "D:\\github\\AspNetCoreSimpleAop\\Repository\\Order.Repository\\Order.Repository.csproj"
               }
             }
           }
@@ -150,14 +153,14 @@
         }
       }
     },
-    "D:\\github\\AspNetCoreSimpleAop\\IOrder.Repository\\IOrder.Repository.csproj": {
+    "D:\\github\\AspNetCoreSimpleAop\\Repository\\IOrder.Repository\\IOrder.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\github\\AspNetCoreSimpleAop\\IOrder.Repository\\IOrder.Repository.csproj",
+        "projectUniqueName": "D:\\github\\AspNetCoreSimpleAop\\Repository\\IOrder.Repository\\IOrder.Repository.csproj",
         "projectName": "IOrder.Repository",
-        "projectPath": "D:\\github\\AspNetCoreSimpleAop\\IOrder.Repository\\IOrder.Repository.csproj",
+        "projectPath": "D:\\github\\AspNetCoreSimpleAop\\Repository\\IOrder.Repository\\IOrder.Repository.csproj",
         "packagesPath": "C:\\Users\\lzx\\.nuget\\packages\\",
-        "outputPath": "D:\\github\\AspNetCoreSimpleAop\\IOrder.Repository\\obj\\",
+        "outputPath": "D:\\github\\AspNetCoreSimpleAop\\Repository\\IOrder.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lzx\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -211,14 +214,14 @@
         }
       }
     },
-    "D:\\github\\AspNetCoreSimpleAop\\Order.Repository\\Order.Repository.csproj": {
+    "D:\\github\\AspNetCoreSimpleAop\\Repository\\Order.Repository\\Order.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\github\\AspNetCoreSimpleAop\\Order.Repository\\Order.Repository.csproj",
+        "projectUniqueName": "D:\\github\\AspNetCoreSimpleAop\\Repository\\Order.Repository\\Order.Repository.csproj",
         "projectName": "Order.Repository",
-        "projectPath": "D:\\github\\AspNetCoreSimpleAop\\Order.Repository\\Order.Repository.csproj",
+        "projectPath": "D:\\github\\AspNetCoreSimpleAop\\Repository\\Order.Repository\\Order.Repository.csproj",
         "packagesPath": "C:\\Users\\lzx\\.nuget\\packages\\",
-        "outputPath": "D:\\github\\AspNetCoreSimpleAop\\Order.Repository\\obj\\",
+        "outputPath": "D:\\github\\AspNetCoreSimpleAop\\Repository\\Order.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lzx\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -236,8 +239,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\github\\AspNetCoreSimpleAop\\IOrder.Repository\\IOrder.Repository.csproj": {
-                "projectPath": "D:\\github\\AspNetCoreSimpleAop\\IOrder.Repository\\IOrder.Repository.csproj"
+              "D:\\github\\AspNetCoreSimpleAop\\Repository\\IOrder.Repository\\IOrder.Repository.csproj": {
+                "projectPath": "D:\\github\\AspNetCoreSimpleAop\\Repository\\IOrder.Repository\\IOrder.Repository.csproj"
               }
             }
           }

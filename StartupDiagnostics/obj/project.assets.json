@@ -1282,6 +1282,7 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Autofac": "8.0.0",
+          "IOrder.Repository": "1.0.0",
           "Microsoft.Extensions.Hosting.Abstractions": "8.0.0",
           "Order.Repository": "1.0.0"
         },
@@ -4652,13 +4653,13 @@
     },
     "IOrder.Repository/1.0.0": {
       "type": "project",
-      "path": "../IOrder.Repository/IOrder.Repository.csproj",
-      "msbuildProject": "../IOrder.Repository/IOrder.Repository.csproj"
+      "path": "../Repository/IOrder.Repository/IOrder.Repository.csproj",
+      "msbuildProject": "../Repository/IOrder.Repository/IOrder.Repository.csproj"
     },
     "Order.Repository/1.0.0": {
       "type": "project",
-      "path": "../Order.Repository/Order.Repository.csproj",
-      "msbuildProject": "../Order.Repository/Order.Repository.csproj"
+      "path": "../Repository/Order.Repository/Order.Repository.csproj",
+      "msbuildProject": "../Repository/Order.Repository/Order.Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {

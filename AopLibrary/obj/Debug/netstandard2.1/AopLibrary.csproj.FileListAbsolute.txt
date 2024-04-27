@@ -1,13 +1,3 @@
-D:\GitHub\AspNetCoreSimpleAop\AopLibrary\bin\Debug\netstandard2.1\AopLibrary.deps.json
-D:\GitHub\AspNetCoreSimpleAop\AopLibrary\bin\Debug\netstandard2.1\AopLibrary.dll
-D:\GitHub\AspNetCoreSimpleAop\AopLibrary\bin\Debug\netstandard2.1\AopLibrary.pdb
-D:\GitHub\AspNetCoreSimpleAop\AopLibrary\obj\Debug\netstandard2.1\AopLibrary.csproj.AssemblyReference.cache
-D:\GitHub\AspNetCoreSimpleAop\AopLibrary\obj\Debug\netstandard2.1\AopLibrary.GeneratedMSBuildEditorConfig.editorconfig
-D:\GitHub\AspNetCoreSimpleAop\AopLibrary\obj\Debug\netstandard2.1\AopLibrary.AssemblyInfoInputs.cache
-D:\GitHub\AspNetCoreSimpleAop\AopLibrary\obj\Debug\netstandard2.1\AopLibrary.AssemblyInfo.cs
-D:\GitHub\AspNetCoreSimpleAop\AopLibrary\obj\Debug\netstandard2.1\AopLibrary.csproj.CoreCompileInputs.cache
-D:\GitHub\AspNetCoreSimpleAop\AopLibrary\obj\Debug\netstandard2.1\AopLibrary.dll
-D:\GitHub\AspNetCoreSimpleAop\AopLibrary\obj\Debug\netstandard2.1\AopLibrary.pdb
 D:\下载\AspNetCoreSimpleAop-main\AspNetCoreSimpleAop-main\AopLibrary\bin\Debug\netstandard2.1\AopLibrary.deps.json
 D:\下载\AspNetCoreSimpleAop-main\AspNetCoreSimpleAop-main\AopLibrary\bin\Debug\netstandard2.1\AopLibrary.dll
 D:\下载\AspNetCoreSimpleAop-main\AspNetCoreSimpleAop-main\AopLibrary\bin\Debug\netstandard2.1\AopLibrary.pdb
@@ -18,7 +8,6 @@ D:\下载\AspNetCoreSimpleAop-main\AspNetCoreSimpleAop-main\AopLibrary\obj\Debug
 D:\下载\AspNetCoreSimpleAop-main\AspNetCoreSimpleAop-main\AopLibrary\obj\Debug\netstandard2.1\AopLibrary.csproj.CoreCompileInputs.cache
 D:\下载\AspNetCoreSimpleAop-main\AspNetCoreSimpleAop-main\AopLibrary\obj\Debug\netstandard2.1\AopLibrary.dll
 D:\下载\AspNetCoreSimpleAop-main\AspNetCoreSimpleAop-main\AopLibrary\obj\Debug\netstandard2.1\AopLibrary.pdb
-D:\github\AspNetCoreSimpleAop\AopLibrary\obj\Debug\netstandard2.1\AopLibrary.sourcelink.json
 C:\Users\victor.liu\Documents\GitHub\AspNetCoreSimpleAop\AopLibrary\bin\Debug\netstandard2.1\AopLibrary.deps.json
 C:\Users\victor.liu\Documents\GitHub\AspNetCoreSimpleAop\AopLibrary\bin\Debug\netstandard2.1\AopLibrary.dll
 C:\Users\victor.liu\Documents\GitHub\AspNetCoreSimpleAop\AopLibrary\bin\Debug\netstandard2.1\AopLibrary.pdb
@@ -30,3 +19,14 @@ C:\Users\victor.liu\Documents\GitHub\AspNetCoreSimpleAop\AopLibrary\obj\Debug\ne
 C:\Users\victor.liu\Documents\GitHub\AspNetCoreSimpleAop\AopLibrary\obj\Debug\netstandard2.1\AopLibrary.sourcelink.json
 C:\Users\victor.liu\Documents\GitHub\AspNetCoreSimpleAop\AopLibrary\obj\Debug\netstandard2.1\AopLibrary.dll
 C:\Users\victor.liu\Documents\GitHub\AspNetCoreSimpleAop\AopLibrary\obj\Debug\netstandard2.1\AopLibrary.pdb
+D:\github\AspNetCoreSimpleAop\AopLibrary\bin\Debug\netstandard2.1\AopLibrary.deps.json
+D:\github\AspNetCoreSimpleAop\AopLibrary\bin\Debug\netstandard2.1\AopLibrary.dll
+D:\github\AspNetCoreSimpleAop\AopLibrary\bin\Debug\netstandard2.1\AopLibrary.pdb
+D:\github\AspNetCoreSimpleAop\AopLibrary\obj\Debug\netstandard2.1\AopLibrary.csproj.AssemblyReference.cache
+D:\github\AspNetCoreSimpleAop\AopLibrary\obj\Debug\netstandard2.1\AopLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\github\AspNetCoreSimpleAop\AopLibrary\obj\Debug\netstandard2.1\AopLibrary.AssemblyInfoInputs.cache
+D:\github\AspNetCoreSimpleAop\AopLibrary\obj\Debug\netstandard2.1\AopLibrary.AssemblyInfo.cs
+D:\github\AspNetCoreSimpleAop\AopLibrary\obj\Debug\netstandard2.1\AopLibrary.csproj.CoreCompileInputs.cache
+D:\github\AspNetCoreSimpleAop\AopLibrary\obj\Debug\netstandard2.1\AopLibrary.sourcelink.json
+D:\github\AspNetCoreSimpleAop\AopLibrary\obj\Debug\netstandard2.1\AopLibrary.dll
+D:\github\AspNetCoreSimpleAop\AopLibrary\obj\Debug\netstandard2.1\AopLibrary.pdb

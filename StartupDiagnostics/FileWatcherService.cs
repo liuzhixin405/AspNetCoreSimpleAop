@@ -14,7 +14,7 @@ namespace StartupDiagnostics
         private readonly IHostApplicationLifetime _appLifetime;
         public FileWatcherService(IHostApplicationLifetime appLifetime)
         {
-            _watchedFolder =Path.Combine(Directory.GetCurrentDirectory(),"lib");
+            _watchedFolder =Path.Combine(Directory.GetCurrentDirectory(),"lib"); //细化指定类型的dll
             _appLifetime = appLifetime;
         }
 
