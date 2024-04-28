@@ -16,11 +16,7 @@ using Newtonsoft.Json;
 using Contract;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ApplicationParts;
-using StartupDiagnostics.AutoReloadController;
-using Autofac.Core;
 using Microsoft.Extensions.DependencyInjection.Extensions;
-using StartupDiagnostics.AutoAddController;
 
 // Use a Hosting Startup Attribute to identify the IHostingStartup implementation.
 [assembly: HostingStartup(typeof(StartupDiagnostics.StartupDiagnosticsHostingStartup))]
@@ -54,59 +50,16 @@ namespace StartupDiagnostics
                 // Implement a startup filter that is used to register 
                 // two middleware components.
                 services.AddSingleton<IStartupFilter, DiagnosticMiddlewareStartupFilter>();
-                services.AddSingleton<ICompiler, Compiler>().AddSingleton<DynamicChangeTokenProvider>()
-                    .AddSingleton<IActionDescriptorChangeProvider>(provider => provider.GetRequiredService<DynamicChangeTokenProvider>());
+       
                 services.Initialize();
                 services.AddSingleton<IStartupFilter, MyControllerFilter>();
                 services.AddSingleton(typeof(PluginManager));
+                services.AddHostedService<FileWatcherService>();
 
-                services.AddSingleton<IControllerReloader, ControllerReloader>();
-                services.AddSingleton<IStartupFilter, ReloadFilter>();
-                services.AddSingleton(typeof(FileSystemWatcher));
-                services.AddHostedService<BackStartupService>();
-                ReloadFilter.MyServiceCollection = services;
-            })
-            //    .ConfigureKestrel(options =>
-            //{
-            //    options.Listen(new System.Net.IPAddress() , 5008);
-            //})
-                ;
+            });
         }
     }
 
-    public class ReloadFilter : IStartupFilter
-    {
-        public static IServiceCollection MyServiceCollection { get; set; }
-        public Action<IApplicationBuilder> Configure(Action<IApplicationBuilder> next)
-        {
-            return app =>
-            {
-                // 在开发环境下启用动态重新加载
-                app.UseRouting();
-                app.UseEndpoints(endpoints =>
-                {
-                    //行不通
-                    endpoints.MapGet("/reload-controllers", async ([FromServices] IControllerReloader controllerReloader, HttpContext context) =>
-                    {
-                        // 在此处触发重新加载操作
-                        controllerReloader.ReloadControllers();
-
-                        var oldServiceDescriptor = MyServiceCollection.SingleOrDefault(descriptor =>
-              descriptor.ServiceType == typeof(IStartupFilter) && descriptor.ImplementationType == typeof(MyControllerFilter));
-                        if (oldServiceDescriptor != null)
-                        {
-                            MyServiceCollection.Remove(oldServiceDescriptor);
-                        }
-
-                        // 添加新服务
-                        MyServiceCollection.TryAddTransient<IStartupFilter, MyControllerFilter>();
-                        await context.Response.WriteAsync("Controllers reloaded.");
-                    });
-                });
-                next(app);
-            };
-        }
-    }
 
     public class MyControllerFilter : IStartupFilter
     {
@@ -127,15 +80,6 @@ namespace StartupDiagnostics
                 app.UseRouting();
                 app.UseEndpoints(endpoints =>
                 {
-                    endpoints.MapGet("/reloadPlugin", async (string source, [FromServices] ApplicationPartManager manager, [FromServices] ICompiler compiler,[FromServices] DynamicChangeTokenProvider tokenProvider, HttpContext cotext) =>
-                    {
-                        manager.ApplicationParts.Add(new AssemblyPart(compiler.Compile(source, Assembly.Load(new AssemblyName("System.Runtime")),
-                    typeof(object).Assembly,
-                    typeof(ControllerBase).Assembly,
-                    typeof(Controller).Assembly)));
-                        tokenProvider.NotifyChanges();
-                        return ("OK");
-                    });
                     foreach (IPlugin item in pluginManager.GetPlugins())
                     {
                         foreach (MethodInfo mi in item.GetType().GetMethods(bindingFlags))
