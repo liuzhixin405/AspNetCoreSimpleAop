@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj": {}
+    "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj": {}
   },
   "projects": {
     "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\AutofacRegister\\AutofacRegister.csproj": {
@@ -279,14 +279,14 @@
         }
       }
     },
-    "c:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj": {
+    "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj",
+        "projectUniqueName": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj",
         "projectName": "StartupDiagnostics",
-        "projectPath": "c:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj",
+        "projectPath": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj",
         "packagesPath": "C:\\Users\\victor.liu\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\obj\\",
+        "outputPath": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\victor.liu\\AppData\\Roaming\\NuGet\\NuGet.Config",

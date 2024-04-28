@@ -32,8 +32,8 @@
               "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj": {
                 "projectPath": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj"
               },
-              "c:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj": {
-                "projectPath": "c:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj"
+              "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj": {
+                "projectPath": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj"
               }
             }
           }
@@ -463,14 +463,14 @@
         }
       }
     },
-    "c:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj": {
+    "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj",
+        "projectUniqueName": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj",
         "projectName": "StartupDiagnostics",
-        "projectPath": "c:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj",
+        "projectPath": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj",
         "packagesPath": "C:\\Users\\victor.liu\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\obj\\",
+        "outputPath": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\victor.liu\\AppData\\Roaming\\NuGet\\NuGet.Config",

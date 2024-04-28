@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wqaj5xHc0p1HWsIpv9TZlsHF6LyPxuchrrGXdbzyZT8ryY4YhYOVx0PUixEcF0ke2bUoKnyGz+/FfxGRCMmxJw==",
+  "dgSpecHash": "15iri8E7OGqPGDfR0ozQsttm59VNtOpmXGSijXq4+U7Aorb8/KGtSTYJhUEWXWVjcq8wR0yuBCq0gdjDvSWwTQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj",
+  "projectFilePath": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\victor.liu\\.nuget\\packages\\autofac\\8.0.0\\autofac.8.0.0.nupkg.sha512",
     "C:\\Users\\victor.liu\\.nuget\\packages\\autofac.extensions.dependencyinjection\\9.0.0\\autofac.extensions.dependencyinjection.9.0.0.nupkg.sha512",
