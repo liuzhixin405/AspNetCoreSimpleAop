@@ -16,20 +16,48 @@ namespace AutofacRegister
     }
     public class RepositoryProvider : IRepositoryProvider
     {
+        private readonly Dictionary<string, (Assembly assembly, DateTime lastModified)> _assemblyCache = new Dictionary<string, (Assembly assembly, DateTime lastModified)>();
+
         public IRepository GetRepository(string x)
         {
             var path = $"{Directory.GetCurrentDirectory()}\\lib\\{x}.Repository.dll";
-            var _AssemblyLoadContext = new AssemblyLoadContext(Guid.NewGuid().ToString("N"), true);
-            Assembly assembly = null;
-            using (var fs = new FileStream(path, FileMode.Open, FileAccess.Read))
-            {
-                 assembly = _AssemblyLoadContext.LoadFromStream(fs);
-            }
-               
-            //var assembly = Assembly.LoadFrom(path);
-            var types = assembly.GetTypes()
-                .Where(t => typeof(IRepository).IsAssignableFrom(t) && !t.IsInterface);
-            return (IRepository)Activator.CreateInstance(types.First());
+             var lastModified = File.GetLastWriteTimeUtc(path);
+            if (_assemblyCache.TryGetValue(path, out var cachedEntry) && cachedEntry.lastModified == lastModified)
+        {
+            // 使用缓存中的 Assembly 对象
+            return CreateInstanceFromAssembly(cachedEntry.assembly);
         }
+        else
+        {
+            // 加载并缓存新的 Assembly 对象
+            var assembly = LoadAssemblyFromFile(path);
+            _assemblyCache[path] = (assembly, lastModified);
+            return CreateInstanceFromAssembly(assembly);
+        }
+        }
+
+ private Assembly LoadAssemblyFromFile(string path)
+    {
+        var _AssemblyLoadContext = new AssemblyLoadContext(Guid.NewGuid().ToString("N"), true);
+        using (var fs = new FileStream(path, FileMode.Open, FileAccess.Read))
+        {
+            return _AssemblyLoadContext.LoadFromStream(fs);
+        }
+    }
+        private IRepository CreateInstanceFromAssembly(Assembly assembly)
+    {
+        var type = assembly.GetTypes()
+            .Where(t => typeof(IRepository).IsAssignableFrom(t) && !t.IsInterface)
+            .FirstOrDefault();
+        
+        if (type != null)
+        {
+            return (IRepository)Activator.CreateInstance(type);
+        }
+        else
+        {
+            throw new InvalidOperationException("No suitable type found in the assembly.");
+        }
+    }
     }
 }
