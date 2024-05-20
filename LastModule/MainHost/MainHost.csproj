@@ -11,9 +11,11 @@
   </ItemGroup>
 
   <ItemGroup>
+   
+    <ProjectReference Include="..\..\ModuleDevelop\ModuleLib\ModuleLib.csproj" />
+   
     <ProjectReference Include="..\Common\Common.csproj" />
     <ProjectReference Include="..\DependencyInjectionAttribute\DependencyInjectionAttribute.csproj" />
-    <ProjectReference Include="..\ModuleDevelop\ModuleLib\ModuleLib.csproj" />
   </ItemGroup>
 
 </Project>
