@@ -17,6 +17,7 @@ using Contract;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection.Extensions;
+using System.Diagnostics;
 
 // Use a Hosting Startup Attribute to identify the IHostingStartup implementation.
 [assembly: HostingStartup(typeof(StartupDiagnostics.StartupDiagnosticsHostingStartup))]
@@ -70,6 +71,7 @@ namespace StartupDiagnostics
         {
             this.pluginManager = pluginManager;
             controllers.ForEach(x => pluginManager.LoadPlugins($"{Directory.GetCurrentDirectory()}\\lib\\", $"{x}.Impl.dll"));
+            Trace.WriteLine($"MyControllerFilter:Directory.GetCurrentDirectory£º{Directory.GetCurrentDirectory()}£¬environment:{Environment.CurrentDirectory}");
         }
         Action<IApplicationBuilder> IStartupFilter.Configure(Action<IApplicationBuilder> next)
         {
