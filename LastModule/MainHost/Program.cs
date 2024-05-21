@@ -15,7 +15,7 @@ namespace MainHost
             var moduleManager = new ModuleManager();
             moduleManager.LoadModules(builder.Services);
             // Add services to the container.
-            Assembly otherAssembly = Assembly.LoadFile("C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\FirstWeb\\bin\\Debug\\net8.0\\FirstWeb.dll"); //测试才这么写
+            Assembly otherAssembly = Assembly.LoadFile("C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\LastModule\\FirstWeb\\bin\\Debug\\net8.0\\FirstWeb.dll"); //测试才这么写
             builder.Services.AddControllers().AddApplicationPart(otherAssembly);
             // 扫描并注册其他程序集中的服务
             ReisterServiceFromAssembly(builder.Services, otherAssembly);

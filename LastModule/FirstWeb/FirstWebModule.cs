@@ -1,5 +1,6 @@
 ﻿using Common;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using ModuleLib;
 using System;
@@ -14,9 +15,11 @@ namespace FirstWeb
     {
         public void Configure(IApplicationBuilder app)
         {
-            WebApplication webApplication = app as WebApplication;
-    
-            webApplication.MapGet("name/", (IService service) => service.Name());   //该控制器可用         
+            WebApplication newApp = app as WebApplication;
+            var group = newApp.MapGroup("001");
+            group.MapGet("name/", (IService service) => service.Name()).WithTags("大标题1");   //该控制器可用
+            var group2= newApp.MapGroup("002");
+            group2.MapGet("test/", () => "hello test").WithTags("大标题2");   //该控制器可用
         }
 
         public void ConfigureService(IServiceCollection services)
