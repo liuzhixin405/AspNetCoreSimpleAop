@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "sf55kg+J6cm6wSTKzvkroSC+T7dowWfve6FI45MTKFcLx7hgF9qHo39XEX5Fps1eD5KASC+VLz4JQe6tl2oqCQ==",
+  "dgSpecHash": "vBdp0R0iSfbVD1kPVMHO0FPSY/5Pb5DPOrm3tFDC2MUnjWwn2pdjbahP65i2suOm5sYIWA400IGlcmTvV8yPHA==",
   "success": true,
   "projectFilePath": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\AopLibraryTest\\AopLibraryTest.csproj",
   "expectedPackageFiles": [

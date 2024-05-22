@@ -5,8 +5,7 @@
 https://www.cnblogs.com/morec/p/17249940.html
 
 该项目新增动态插件功能
-repository和plugin这两个模块通过反射来动态获取，已实现dll热拔插
-新增Metalama的aop功能
-程序集注入功能
-autofac注入
-module模块化等开发示例
+1. repository和plugin这两个模块通过反射来动态获取，已实现dll热拔插，不太完美，算是模块发开发
+2. AopLibraryTest程序集注入功能,autofac注入
+3. Lastmodule模块化等开发示例 ,重点是controller及业务模块相互独立解耦  模块化开发推荐 
+4. RefreshController动态加载Controller，不需要重启Host主机     完全模块化包括控制器热拔插开发推荐

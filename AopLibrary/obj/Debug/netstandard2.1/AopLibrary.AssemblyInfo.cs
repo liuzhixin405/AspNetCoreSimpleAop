@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AopLibrary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e757f4aa11b2c3d1f523049c3317be518df41c02")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b2d197a5750366454f348ebd3ab70752116628a0")]
 [assembly: System.Reflection.AssemblyProductAttribute("AopLibrary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AopLibrary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
