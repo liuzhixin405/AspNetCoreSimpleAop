@@ -1,19 +1,23 @@
+using Common;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
+using Test002Controller;
 
 namespace Test001Controller;
 [ApiController]
 [Route("[controller]/[action]")]
 public class BookController : ControllerBase
 {
+   
+    private readonly IBookService _animalService;
     public BookController()
     {
-        //业务可以通过反射dll做一个解耦，其他项目有示例，整个项目就串起来了
+        _animalService = ServiceLocator.Instance.CreateScope().ServiceProvider.GetRequiredService<IBookService>();
     }
 
     [HttpGet]
     public string Show()
     {
-        return "叽叽咕唧";
+        return _animalService.GetBookName();
     }
 }

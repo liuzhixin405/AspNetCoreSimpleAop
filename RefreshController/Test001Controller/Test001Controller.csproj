@@ -4,8 +4,15 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	  <AppendTargetFrameworkToOutputPath>output</AppendTargetFrameworkToOutputPath>
+	  <OutputPath>..\BigHost\lib</OutputPath>
   </PropertyGroup>
 	<ItemGroup>
 		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\..\LastModule\Common\Common.csproj" />
+	  <ProjectReference Include="..\..\LastModule\DependencyInjectionAttribute\DependencyInjectionAttribute.csproj" />
+	  <ProjectReference Include="..\..\ModuleDevelop\ModuleLib\ModuleLib.csproj" />
 	</ItemGroup>
 </Project>

@@ -37,7 +37,7 @@ namespace MainHost
                 // 扫描并注册其他程序集中的控制器
                 mvcBuilder.AddApplicationPart(assembly);
                 // 扫描并注册其他程序集中的服务
-                ReisterServiceFromAssembly(builder.Services, assembly);
+                builder.Services.ReisterServiceFromAssembly(assembly);
             }
            
 
@@ -70,17 +70,6 @@ namespace MainHost
             app.MapControllers();
 
             app.Run();
-        }
-
-        private static void ReisterServiceFromAssembly(IServiceCollection services, Assembly assembly)
-        {
-            var typesWithServiceAttribute = assembly.GetTypes().Where(t => t.GetCustomAttributes<CusServiceAttribute>().Any());
-
-            foreach (var type in typesWithServiceAttribute)
-            {
-                var servceAttribute = type.GetCustomAttribute<CusServiceAttribute>();
-                services.Add(new ServiceDescriptor(servceAttribute.ServiceType ?? type, type, servceAttribute.Lifetime));
-            }
         }
     }
 }

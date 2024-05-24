@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -9,6 +9,16 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\LastModule\Common\Common.csproj" />
+    <ProjectReference Include="..\..\LastModule\DependencyInjectionAttribute\DependencyInjectionAttribute.csproj" />
+    <ProjectReference Include="..\..\ModuleDevelop\ModuleLib\ModuleLib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="lib\" />
   </ItemGroup>
 
 </Project>
