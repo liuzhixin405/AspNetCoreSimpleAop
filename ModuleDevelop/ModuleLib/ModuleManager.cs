@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace ModuleLib
 {
+    /// <summary>
+    /// 放弃了，改用依赖注入的方式
+    /// </summary>
     public class ModuleManager
     {
         private readonly IServiceCollection _services;
