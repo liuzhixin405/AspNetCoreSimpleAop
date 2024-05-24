@@ -12,7 +12,7 @@ namespace Test001Controller
         string Speak();
     }
 
-    [CusService(typeof(IAnimalService))]
+    //[CusService(typeof(IAnimalService))]
     public class Dog : IAnimalService
     {
         public string Speak()

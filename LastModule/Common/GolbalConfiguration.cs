@@ -15,7 +15,7 @@ namespace Common
         /// </summary>
         public static DateTime InitialOn = new DateTime(2019, 1, 1, 0, 0, 0, DateTimeKind.Local);
 
-        public static IList<ModuleInfo> Modules { get; set; } = new List<ModuleInfo>();
+        public static List<ModuleInfo> Modules { get; set; } = new List<ModuleInfo>();
        
         public static string WebRootPath { get; set; }
 

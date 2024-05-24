@@ -14,13 +14,7 @@ builder.Configuration.AddJsonFile($"appsettings.{builder.Environment.Environment
 builder.Configuration.AddJsonFile("appsettings.Modules.json", optional: false, reloadOnChange: true);
 builder.Services.InitModule(builder.Configuration);
 var sp = builder.Services.BuildServiceProvider();
-
-var modules =sp.GetServices<IModule>();
-foreach (var module in modules)
-{
-    module.ConfigureService(builder.Services, builder.Configuration);
-}
-
+var modules = sp.GetServices<IModule>();
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -29,12 +23,16 @@ builder.Services.AddSwaggerGen();
 //最新dotnet没有这些
 builder.Services.AddControllers().ConfigureApplicationPartManager(apm =>
 {
-   
-    var context = new CollectibleAssemblyLoadContext();
 
+    var context = new CollectibleAssemblyLoadContext();
     DirectoryInfo DirInfo = new DirectoryInfo(Path.Combine(Directory.GetCurrentDirectory(), "lib"));
 
-    FileInfo[] lib = DirInfo.GetFiles().Where(x => x.Name.EndsWith("Test001Controller.dll") || x.Name.EndsWith("Test002Controller.dll")).ToArray();
+
+    foreach (var module in modules)
+    {
+        module.ConfigureService(builder.Services, builder.Configuration);
+    }
+
     GolbalConfiguration.Modules.Select(x => x.Assembly).ToList().ForEach(x =>
     {
         builder.Services.ReisterServiceFromAssembly(x);
@@ -42,19 +40,8 @@ builder.Services.AddControllers().ConfigureApplicationPartManager(apm =>
         apm.ApplicationParts.Add(controllerAssemblyPart);
         ExternalContexts.Add(x.GetName().Name, context);
     });
-
-    //foreach (FileInfo fileInfo in lib)   //依赖注入不生效
-    //{
-    //    using (FileStream fs = new FileStream(fileInfo.FullName, FileMode.Open))
-    //    {
-    //        var assembly = context.LoadFromStream(fs);
-    //        var controllerAssemblyPart = new AssemblyPart(assembly);
-    //        apm.ApplicationParts.Add(controllerAssemblyPart);
-    //        ExternalContexts.Add(fileInfo.Name, context);
-    //    }
-    //}
 });
- //GolbalConfiguration.Modules.Select(x => x.Assembly).ToList().ForEach(x => builder.Services.ReisterServiceFromAssembly(x));
+//GolbalConfiguration.Modules.Select(x => x.Assembly).ToList().ForEach(x => builder.Services.ReisterServiceFromAssembly(x));
 builder.Services.AddSingleton<IActionDescriptorChangeProvider>(ActionDescriptorChangeProvider.Instance);
 builder.Services.AddSingleton(ActionDescriptorChangeProvider.Instance);
 
@@ -91,7 +78,6 @@ app.MapGet("/Add", ([FromServices] ApplicationPartManager _partManager, string n
         //ExternalContexts.Add(name + ".dll", context);
         ExternalContexts.Add(name, context);
 
-
         //更新Controllers
         ActionDescriptorChangeProvider.Instance.HasChanged = true;
         ActionDescriptorChangeProvider.Instance.TokenSource!.Cancel();
@@ -105,9 +91,9 @@ app.MapGet("/Remove", ([FromServices] ApplicationPartManager _partManager, strin
 {
     //if (ExternalContexts.Any(
     //    $"{name}.dll"))
-        if (ExternalContexts.Any(
-       $"{name}"))
-        {
+    if (ExternalContexts.Any(
+   $"{name}"))
+    {
         var matcheditem = _partManager.ApplicationParts.FirstOrDefault(x => x.Name == name);
         if (matcheditem != null)
         {
@@ -128,8 +114,3 @@ app.MapGet("/Remove", ([FromServices] ApplicationPartManager _partManager, strin
 app.UseRouting(); //最新dotnet没有这些
 app.MapControllers();  //最新dotnet没有这些
 app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
