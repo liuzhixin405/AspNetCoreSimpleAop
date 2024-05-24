@@ -29,24 +29,32 @@ builder.Services.AddSwaggerGen();
 //最新dotnet没有这些
 builder.Services.AddControllers().ConfigureApplicationPartManager(apm =>
 {
-    GolbalConfiguration.Modules.Select(x => x.Assembly).ToList().ForEach(x => builder.Services.ReisterServiceFromAssembly(x));
+   
     var context = new CollectibleAssemblyLoadContext();
 
     DirectoryInfo DirInfo = new DirectoryInfo(Path.Combine(Directory.GetCurrentDirectory(), "lib"));
 
     FileInfo[] lib = DirInfo.GetFiles().Where(x => x.Name.EndsWith("Test001Controller.dll") || x.Name.EndsWith("Test002Controller.dll")).ToArray();
-    foreach (FileInfo fileInfo in lib)
+    GolbalConfiguration.Modules.Select(x => x.Assembly).ToList().ForEach(x =>
     {
-        using (FileStream fs = new FileStream(fileInfo.FullName, FileMode.Open))
-        {
-            var assembly = context.LoadFromStream(fs);
-            var controllerAssemblyPart = new AssemblyPart(assembly);
-            apm.ApplicationParts.Add(controllerAssemblyPart);
-            ExternalContexts.Add(fileInfo.Name, context);
-        }
-    }
-});
+        builder.Services.ReisterServiceFromAssembly(x);
+        var controllerAssemblyPart = new AssemblyPart(x);
+        apm.ApplicationParts.Add(controllerAssemblyPart);
+        ExternalContexts.Add(x.GetName().Name, context);
+    });
 
+    //foreach (FileInfo fileInfo in lib)   //依赖注入不生效
+    //{
+    //    using (FileStream fs = new FileStream(fileInfo.FullName, FileMode.Open))
+    //    {
+    //        var assembly = context.LoadFromStream(fs);
+    //        var controllerAssemblyPart = new AssemblyPart(assembly);
+    //        apm.ApplicationParts.Add(controllerAssemblyPart);
+    //        ExternalContexts.Add(fileInfo.Name, context);
+    //    }
+    //}
+});
+ //GolbalConfiguration.Modules.Select(x => x.Assembly).ToList().ForEach(x => builder.Services.ReisterServiceFromAssembly(x));
 builder.Services.AddSingleton<IActionDescriptorChangeProvider>(ActionDescriptorChangeProvider.Instance);
 builder.Services.AddSingleton(ActionDescriptorChangeProvider.Instance);
 
@@ -80,7 +88,8 @@ app.MapGet("/Add", ([FromServices] ApplicationPartManager _partManager, string n
 
         _partManager.ApplicationParts.Add(controllerAssemblyPart);
 
-        ExternalContexts.Add(name + ".dll", context);
+        //ExternalContexts.Add(name + ".dll", context);
+        ExternalContexts.Add(name, context);
 
 
         //更新Controllers
@@ -94,9 +103,11 @@ app.MapGet("/Add", ([FromServices] ApplicationPartManager _partManager, string n
 
 app.MapGet("/Remove", ([FromServices] ApplicationPartManager _partManager, string name) =>
 {
-    if (ExternalContexts.Any(
-        $"{name}.dll"))
-    {
+    //if (ExternalContexts.Any(
+    //    $"{name}.dll"))
+        if (ExternalContexts.Any(
+       $"{name}"))
+        {
         var matcheditem = _partManager.ApplicationParts.FirstOrDefault(x => x.Name == name);
         if (matcheditem != null)
         {
@@ -105,7 +116,8 @@ app.MapGet("/Remove", ([FromServices] ApplicationPartManager _partManager, strin
         }
         ActionDescriptorChangeProvider.Instance.HasChanged = true;
         ActionDescriptorChangeProvider.Instance.TokenSource!.Cancel();
-        ExternalContexts.Remove(name + ".dll");
+        //ExternalContexts.Remove(name + ".dll");
+        ExternalContexts.Remove(name);
         return $"成功移除{name}controller";
     }
     else

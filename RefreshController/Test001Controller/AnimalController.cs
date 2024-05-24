@@ -24,7 +24,8 @@ public class AnimalController : ControllerBase
     public string Speak()
     {
         // 在需要的时候动态解析服务
-        var animalService = ServiceLocator.Instance.GetRequiredService<IAnimalService>();
+        using var scope = ServiceLocator.Instance.CreateScope();
+        var animalService = scope.ServiceProvider.GetRequiredService<IAnimalService>();
         return animalService.Speak();
     }
 }
