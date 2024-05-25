@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using Business;
+using IBusiness;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -21,6 +23,7 @@ namespace Test001Controller
         public void ConfigureService(IServiceCollection services, IConfiguration configuration = null)
         {
             services.AddTransient<IAnimalService, Dog>();
+            services.AddTransient<IProductBusiness, ProductBusiness>(); //需要host 程序集有直接引用,否则找不到对象
         }
     }
 }

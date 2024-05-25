@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using ModuleLib;
 using System.Xml.Linq;
 using DependencyInjectionAttribute;
+
 var builder = WebApplication.CreateBuilder(args);
 builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
 builder.Configuration.AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true, reloadOnChange: true);
@@ -25,8 +26,8 @@ builder.Services.AddControllers().ConfigureApplicationPartManager(apm =>
 {
 
     var context = new CollectibleAssemblyLoadContext();
-    DirectoryInfo DirInfo = new DirectoryInfo(Path.Combine(Directory.GetCurrentDirectory(), "lib"));
-
+    //DirectoryInfo DirInfo = new DirectoryInfo(Path.Combine(Directory.GetCurrentDirectory(), "lib"));
+    //builder.Services.AddTransient<IProductBusiness, ProductBusiness>();
 
     foreach (var module in modules)
     {

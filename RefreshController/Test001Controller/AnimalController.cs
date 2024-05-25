@@ -1,4 +1,5 @@
 using Common;
+using IBusiness;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -27,5 +28,13 @@ public class AnimalController : ControllerBase
         using var scope = ServiceLocator.Instance.CreateScope();
         var animalService = scope.ServiceProvider.GetRequiredService<IAnimalService>();
         return animalService.Speak();
+    }
+
+    [HttpPost]
+    public async Task<int> Add()
+    {
+        using var scope = ServiceLocator.Instance.CreateScope();
+        var business = scope.ServiceProvider.GetRequiredService<IProductBusiness>();
+        return await business.AddProduct("product1",12.1m);
     }
 }
