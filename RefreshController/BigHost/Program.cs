@@ -8,6 +8,9 @@ using Microsoft.Extensions.Configuration;
 using ModuleLib;
 using System.Xml.Linq;
 using DependencyInjectionAttribute;
+using Castle.DynamicProxy;
+using Test001Controller;
+
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
@@ -28,6 +31,7 @@ builder.Services.AddControllers().ConfigureApplicationPartManager(apm =>
     DirectoryInfo DirInfo = new DirectoryInfo(Path.Combine(Directory.GetCurrentDirectory(), "lib"));
     foreach (var file in DirInfo.GetFiles("*.dll"))
     {
+       
         //if(!(file.Name.Contains("Test001Controller") || file.Name.Contains("Test002Controller")))
         //{
         //    continue;
@@ -36,20 +40,22 @@ builder.Services.AddControllers().ConfigureApplicationPartManager(apm =>
         var controllerAssemblyPart = new AssemblyPart(assembly);
         apm.ApplicationParts.Add(controllerAssemblyPart);
         ExternalContexts.Add(file.Name, context);
+        
     }
 });
-    //builder.Services.AddTransient<IProductBusiness, ProductBusiness>();
-    //foreach (var module in modules)
-    //{
-    //    module.ConfigureService(builder.Services, builder.Configuration);
-    //}
-    //GolbalConfiguration.Modules.Select(x => x.Assembly).ToList().ForEach(x =>
-    //{
-    //    builder.Services.ReisterServiceFromAssembly(x);
-    //    var controllerAssemblyPart = new AssemblyPart(x);
-    //    apm.ApplicationParts.Add(controllerAssemblyPart);
-    //    ExternalContexts.Add(x.GetName().Name, context);
-    //});
+
+//builder.Services.AddTransient<IProductBusiness, ProductBusiness>();
+//foreach (var module in modules)
+//{
+//    module.ConfigureService(builder.Services, builder.Configuration);
+//}
+//GolbalConfiguration.Modules.Select(x => x.Assembly).ToList().ForEach(x =>
+//{
+//    builder.Services.ReisterServiceFromAssembly(x);
+//    var controllerAssemblyPart = new AssemblyPart(x);
+//    apm.ApplicationParts.Add(controllerAssemblyPart);
+//    ExternalContexts.Add(x.GetName().Name, context);
+//});
 //});
 //GolbalConfiguration.Modules.Select(x => x.Assembly).ToList().ForEach(x => builder.Services.ReisterServiceFromAssembly(x));
 builder.Services.AddSingleton<IActionDescriptorChangeProvider>(ActionDescriptorChangeProvider.Instance);
