@@ -55,6 +55,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business", "RefreshControll
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IBusiness", "RefreshController\IBusiness\IBusiness.csproj", "{34A15E5C-90A3-4958-804C-305AE4E127BD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FilterAop", "FilterAop", "{9B112962-6F28-46BD-8753-6D04E77C91A3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FiterTestApi", "FilterAop\FiterTestApi\FiterTestApi.csproj", "{99442370-7D35-4D52-A2AD-1A367DC677C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +145,10 @@ Global
 		{34A15E5C-90A3-4958-804C-305AE4E127BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34A15E5C-90A3-4958-804C-305AE4E127BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34A15E5C-90A3-4958-804C-305AE4E127BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99442370-7D35-4D52-A2AD-1A367DC677C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99442370-7D35-4D52-A2AD-1A367DC677C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99442370-7D35-4D52-A2AD-1A367DC677C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99442370-7D35-4D52-A2AD-1A367DC677C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -162,6 +170,7 @@ Global
 		{D391DFF1-3BEA-4110-ABD3-44D3832BCA62} = {21FF101A-0F06-4047-87CF-F5DC189EAE1C}
 		{4222BAC2-CB70-4630-861B-548BB3B0B538} = {21FF101A-0F06-4047-87CF-F5DC189EAE1C}
 		{34A15E5C-90A3-4958-804C-305AE4E127BD} = {21FF101A-0F06-4047-87CF-F5DC189EAE1C}
+		{99442370-7D35-4D52-A2AD-1A367DC677C8} = {9B112962-6F28-46BD-8753-6D04E77C91A3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B4A111A7-3BBF-482D-BEA7-613918919431}

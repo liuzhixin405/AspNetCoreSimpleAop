@@ -1,0 +1,6 @@
+@FiterTestApi_HostAddress = http://localhost:5199
+
+GET {{FiterTestApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

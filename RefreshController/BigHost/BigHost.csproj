@@ -15,8 +15,6 @@
     <ProjectReference Include="..\..\LastModule\Common\Common.csproj" />
     <ProjectReference Include="..\..\LastModule\DependencyInjectionAttribute\DependencyInjectionAttribute.csproj" />
     <ProjectReference Include="..\..\ModuleDevelop\ModuleLib\ModuleLib.csproj" />
-    <ProjectReference Include="..\Business\Business.csproj" />
-    <ProjectReference Include="..\IBusiness\IBusiness.csproj" />
   </ItemGroup>
 
   <ItemGroup>
