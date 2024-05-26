@@ -5663,19 +5663,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\victor.liu\\.nuget\\packages\\": {}
+    "C:\\Users\\lzx\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\AopLibraryTest\\AopLibraryTest.csproj",
+      "projectUniqueName": "D:\\github\\AspNetCoreSimpleAop\\AopLibraryTest\\AopLibraryTest.csproj",
       "projectName": "AopLibraryTest",
-      "projectPath": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\AopLibraryTest\\AopLibraryTest.csproj",
-      "packagesPath": "C:\\Users\\victor.liu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\AopLibraryTest\\obj\\",
+      "projectPath": "D:\\github\\AspNetCoreSimpleAop\\AopLibraryTest\\AopLibraryTest.csproj",
+      "packagesPath": "C:\\Users\\lzx\\.nuget\\packages\\",
+      "outputPath": "D:\\github\\AspNetCoreSimpleAop\\AopLibraryTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\victor.liu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lzx\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5690,11 +5690,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj": {
-              "projectPath": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj"
+            "D:\\github\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj": {
+              "projectPath": "D:\\github\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj"
             },
-            "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj": {
-              "projectPath": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj"
+            "D:\\github\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj": {
+              "projectPath": "D:\\github\\AspNetCoreSimpleAop\\StartupDiagnostics\\StartupDiagnostics.csproj"
             }
           }
         }

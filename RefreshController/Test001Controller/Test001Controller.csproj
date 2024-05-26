@@ -11,8 +11,14 @@
 		<FrameworkReference Include="Microsoft.AspNetCore.App" />
 	</ItemGroup>
 	<ItemGroup>
+	  <PackageReference Include="Castle.Core" Version="5.1.1" />
+	</ItemGroup>
+	<ItemGroup>
 	  <ProjectReference Include="..\..\LastModule\Common\Common.csproj" />
 	  <ProjectReference Include="..\..\LastModule\DependencyInjectionAttribute\DependencyInjectionAttribute.csproj" />
 	  <ProjectReference Include="..\..\ModuleDevelop\ModuleLib\ModuleLib.csproj" />
+	  <ProjectReference Include="..\Business\Business.csproj" />
+	  <ProjectReference Include="..\Common\CommonFilter.csproj" />
+	  <ProjectReference Include="..\IBusiness\IBusiness.csproj" />
 	</ItemGroup>
 </Project>

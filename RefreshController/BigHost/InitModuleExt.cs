@@ -13,7 +13,7 @@ namespace BigHost
             foreach (var module in modules)
             {
                 GolbalConfiguration.Modules.Add(module);
-                using (var fileStream = File.OpenRead($"{module.Path}\\{module.Id}.dll"))
+                using (var fileStream = File.OpenRead($"{Directory.GetCurrentDirectory()}\\{module.Path}\\{module.Id}.dll"))
                 {
                     module.Assembly = AssemblyLoadContext.Default.LoadFromStream(fileStream); // 测试才这么写
 

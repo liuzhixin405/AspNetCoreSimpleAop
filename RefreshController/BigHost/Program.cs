@@ -8,13 +8,17 @@ using Microsoft.Extensions.Configuration;
 using ModuleLib;
 using System.Xml.Linq;
 using DependencyInjectionAttribute;
+using Castle.DynamicProxy;
+using Test001Controller;
+
+
 var builder = WebApplication.CreateBuilder(args);
 builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
 builder.Configuration.AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true, reloadOnChange: true);
 builder.Configuration.AddJsonFile("appsettings.Modules.json", optional: false, reloadOnChange: true);
-builder.Services.InitModule(builder.Configuration);
-var sp = builder.Services.BuildServiceProvider();
-var modules = sp.GetServices<IModule>();
+//builder.Services.InitModule(builder.Configuration);
+//var sp = builder.Services.BuildServiceProvider();
+//var modules = sp.GetServices<IModule>();
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -23,24 +27,36 @@ builder.Services.AddSwaggerGen();
 //最新dotnet没有这些
 builder.Services.AddControllers().ConfigureApplicationPartManager(apm =>
 {
-
     var context = new CollectibleAssemblyLoadContext();
     DirectoryInfo DirInfo = new DirectoryInfo(Path.Combine(Directory.GetCurrentDirectory(), "lib"));
-
-
-    foreach (var module in modules)
+    foreach (var file in DirInfo.GetFiles("*.dll"))
     {
-        module.ConfigureService(builder.Services, builder.Configuration);
-    }
-
-    GolbalConfiguration.Modules.Select(x => x.Assembly).ToList().ForEach(x =>
-    {
-        builder.Services.ReisterServiceFromAssembly(x);
-        var controllerAssemblyPart = new AssemblyPart(x);
+       
+        //if(!(file.Name.Contains("Test001Controller") || file.Name.Contains("Test002Controller")))
+        //{
+        //    continue;
+        //}//不能屏蔽掉依赖引用
+        var assembly = context.LoadFromAssemblyPath(file.FullName);
+        var controllerAssemblyPart = new AssemblyPart(assembly);
         apm.ApplicationParts.Add(controllerAssemblyPart);
-        ExternalContexts.Add(x.GetName().Name, context);
-    });
+        ExternalContexts.Add(file.Name, context);
+        
+    }
 });
+
+//builder.Services.AddTransient<IProductBusiness, ProductBusiness>();
+//foreach (var module in modules)
+//{
+//    module.ConfigureService(builder.Services, builder.Configuration);
+//}
+//GolbalConfiguration.Modules.Select(x => x.Assembly).ToList().ForEach(x =>
+//{
+//    builder.Services.ReisterServiceFromAssembly(x);
+//    var controllerAssemblyPart = new AssemblyPart(x);
+//    apm.ApplicationParts.Add(controllerAssemblyPart);
+//    ExternalContexts.Add(x.GetName().Name, context);
+//});
+//});
 //GolbalConfiguration.Modules.Select(x => x.Assembly).ToList().ForEach(x => builder.Services.ReisterServiceFromAssembly(x));
 builder.Services.AddSingleton<IActionDescriptorChangeProvider>(ActionDescriptorChangeProvider.Instance);
 builder.Services.AddSingleton(ActionDescriptorChangeProvider.Instance);
@@ -49,10 +65,10 @@ builder.Services.AddSingleton(ActionDescriptorChangeProvider.Instance);
 
 var app = builder.Build();
 ServiceLocator.Instance = app.Services;
-foreach (var module in modules)
-{
-    module.Configure(app, app.Environment);
-}
+//foreach (var module in modules)
+//{
+//    module.Configure(app, app.Environment);
+//}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

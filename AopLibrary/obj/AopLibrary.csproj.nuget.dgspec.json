@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj": {}
+    "D:\\github\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj": {
+    "D:\\github\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj",
+        "projectUniqueName": "D:\\github\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj",
         "projectName": "AopLibrary",
-        "projectPath": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj",
-        "packagesPath": "C:\\Users\\victor.liu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\victor.liu\\Documents\\GitHub\\AspNetCoreSimpleAop\\AopLibrary\\obj\\",
+        "projectPath": "D:\\github\\AspNetCoreSimpleAop\\AopLibrary\\AopLibrary.csproj",
+        "packagesPath": "C:\\Users\\lzx\\.nuget\\packages\\",
+        "outputPath": "D:\\github\\AspNetCoreSimpleAop\\AopLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
-          "C:\\Users\\victor.liu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lzx\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
