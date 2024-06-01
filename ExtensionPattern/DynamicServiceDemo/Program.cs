@@ -62,7 +62,7 @@ namespace DynamicServiceDemo
             {
 
                 //FileInfo FileInfo = new FileInfo(Path.Combine(Directory.GetCurrentDirectory(), "lib/" + name + ".dll"));
-                FileInfo FileInfo = new FileInfo("D:\\github\\AspNetCoreSimpleAop\\ExtensionPattern\\DynamicServiceDemo\\lib\\bak\\UserControllerService.dll");
+                FileInfo FileInfo = new FileInfo("D:\\github\\AspNetCoreSimpleAop\\ExtensionPattern\\DynamicServiceDemo\\lib\\bak\\UserControllerService.dll"); //这里add和remove是可以放一个文件夹的，不过需要微调代码，这里为了演示方便，懒
                 using (FileStream fs = new FileStream(FileInfo.FullName, FileMode.Open))
                 {
                     var context = new CollectibleAssemblyLoadContext();
