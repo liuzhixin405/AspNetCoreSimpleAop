@@ -29,6 +29,10 @@ namespace UserControllerService
             return false;
         }
 
+         //测试方法是先 生成完整的dll,拷贝一份到lib/bak目录下，再注释掉FullName的接口,再编译运行，可以看到控制器有两个接口。然后remove掉当前控制器，刷新。然后再把lib/bak拷贝到lib下，早add删除掉的控制器，再刷新看效果。
+
+        //结论就是扩展接口可以替代反射注入服务层
+
         //[HttpGet]
         //[Route("fullname")]
         //public string FullName()
